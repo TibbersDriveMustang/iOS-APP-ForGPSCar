@@ -10,6 +10,7 @@ import UIKit
 import CocoaAsyncSocket
 
 class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDelegate {
+    
     @IBOutlet weak var hostTextField: UITextField!
     @IBOutlet weak var localPortTextField: UITextField!
     @IBOutlet weak var remotePortTextField: UITextField!
@@ -17,6 +18,7 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     @IBOutlet weak var answerTextView: UITextView!
     
     var _socket: GCDAsyncUdpSocket?
+    
     var socket: GCDAsyncUdpSocket? {
         get {
             if _socket == nil {
@@ -64,15 +66,15 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
 
     @IBAction func sendPacket(sender: AnyObject) {
         guard let str = messageTextField.text where !str.isEmpty else {
-            log(">>> Cannot send packet: no data inserted")
+            log(">>> Cannot send packet: please enter data to send")
             return
         }
         guard let host = hostTextField.text where !host.isEmpty else {
-            log(">>> Cannot send packet: no host specified")
+            log(">>> Cannot send packet: GPS Car IP not specified")
             return
         }
         guard let port = UInt16(remotePortTextField.text ?? "0") where port > 0 else {
-            log(">>> Cannot send packet: no port specified")
+            log(">>> Cannot send packet: no GPS Car port specified")
             return
         }
         

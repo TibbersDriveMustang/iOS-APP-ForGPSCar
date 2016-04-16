@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F6589E2B1C744EC600AB029C"
-               BuildableName = "UDPClient.app"
-               BlueprintName = "UDPClient"
+               BuildableName = "GPSCar.app"
+               BlueprintName = "GPSCar"
                ReferencedContainer = "container:UDPClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6589E2B1C744EC600AB029C"
-            BuildableName = "UDPClient.app"
-            BlueprintName = "UDPClient"
+            BuildableName = "GPSCar.app"
+            BlueprintName = "GPSCar"
             ReferencedContainer = "container:UDPClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6589E2B1C744EC600AB029C"
-            BuildableName = "UDPClient.app"
-            BlueprintName = "UDPClient"
+            BuildableName = "GPSCar.app"
+            BlueprintName = "GPSCar"
             ReferencedContainer = "container:UDPClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6589E2B1C744EC600AB029C"
-            BuildableName = "UDPClient.app"
-            BlueprintName = "UDPClient"
+            BuildableName = "GPSCar.app"
+            BlueprintName = "GPSCar"
             ReferencedContainer = "container:UDPClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

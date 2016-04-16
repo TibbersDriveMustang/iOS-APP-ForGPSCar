@@ -32,8 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		70E8C8221CC2A96B002136B4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		F6589E2C1C744EC600AB029C /* UDPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6589E2C1C744EC600AB029C /* GPSCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6589E2F1C744EC600AB029C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6589E311C744EC600AB029C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6589E341C744EC600AB029C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		F6589E231C744EC600AB029C = {
 			isa = PBXGroup;
 			children = (
-				70E8C8221CC2A96B002136B4 /* AdSupport.framework */,
 				F6589E421C74500600AB029C /* CocoaAsyncSocket.framework */,
 				F6589E2E1C744EC600AB029C /* UDPClient */,
 				F6589E2D1C744EC600AB029C /* Products */,
@@ -69,7 +67,7 @@
 		F6589E2D1C744EC600AB029C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6589E2C1C744EC600AB029C /* UDPClient.app */,
+				F6589E2C1C744EC600AB029C /* GPSCar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6589E2B1C744EC600AB029C /* UDPClient */ = {
+		F6589E2B1C744EC600AB029C /* GPSCar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6589E3E1C744EC600AB029C /* Build configuration list for PBXNativeTarget "UDPClient" */;
+			buildConfigurationList = F6589E3E1C744EC600AB029C /* Build configuration list for PBXNativeTarget "GPSCar" */;
 			buildPhases = (
 				F6589E281C744EC600AB029C /* Sources */,
 				F6589E291C744EC600AB029C /* Frameworks */,
@@ -104,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = UDPClient;
+			name = GPSCar;
 			productName = UDPClient;
-			productReference = F6589E2C1C744EC600AB029C /* UDPClient.app */;
+			productReference = F6589E2C1C744EC600AB029C /* GPSCar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6589E2B1C744EC600AB029C /* UDPClient */,
+				F6589E2B1C744EC600AB029C /* GPSCar */,
 			);
 		};
 /* End PBXProject section */
@@ -159,7 +157,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		F6589E411C744F4B00AB029C /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -170,7 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "if which carthage >/dev/null; then\n    /usr/local/bin/carthage copy-frameworks\nelse\n    echo \"Carthage does not exist, download from https://github.com/Carthage/Carthage\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -295,6 +293,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				INFOPLIST_FILE = UDPClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -311,6 +310,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				INFOPLIST_FILE = UDPClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6589E3E1C744EC600AB029C /* Build configuration list for PBXNativeTarget "UDPClient" */ = {
+		F6589E3E1C744EC600AB029C /* Build configuration list for PBXNativeTarget "GPSCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6589E3F1C744EC600AB029C /* Debug */,
