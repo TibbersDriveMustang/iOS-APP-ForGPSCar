@@ -114,6 +114,7 @@ SWIFT_CLASS("_TtC6GPSCar11AppDelegate")
 @class UIEvent;
 @class UITextField;
 @class UITextView;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
@@ -124,6 +125,7 @@ SWIFT_CLASS("_TtC6GPSCar14ViewController")
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified remotePortTextField;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified messageTextField;
 @property (nonatomic, weak) IBOutlet UITextView * __null_unspecified answerTextView;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified localIP;
 @property (nonatomic, strong) GCDAsyncUdpSocket * __nullable _socket;
 @property (nonatomic, strong) GCDAsyncUdpSocket * __nullable socket;
 - (void)viewDidLoad;

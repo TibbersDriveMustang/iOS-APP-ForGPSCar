@@ -9,6 +9,7 @@
 import UIKit
 import CocoaAsyncSocket
 
+
 class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var hostTextField: UITextField!
@@ -16,6 +17,9 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     @IBOutlet weak var remotePortTextField: UITextField!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var answerTextView: UITextView!
+    
+    
+    @IBOutlet weak var localIP: UILabel!
     
     var _socket: GCDAsyncUdpSocket?
     
@@ -46,8 +50,13 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     }
 
     override func viewDidLoad() {
+        /*                Get Local IP             */
+        let ipUtil = IPAddress()
+        self.localIP.text = ipUtil.getIPAddress(true)
+        
+        /******************************************/
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         loadDefaults()
     }
     
