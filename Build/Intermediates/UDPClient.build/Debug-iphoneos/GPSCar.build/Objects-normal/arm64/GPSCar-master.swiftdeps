@@ -1,9 +1,0 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "1f6a0df9698018e99f2a6037a93627b9"
-build_time: [514247953, 614004000]
-inputs:
-  "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/TCPClient.swift": [514166605, 0]
-  "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/TCPServer.swift": [513025294, 0]
-  "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ViewController.swift": [514166214, 0]
-  "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/AppDelegate.swift": [514161055, 0]
-  "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/Socket.swift": [514238578, 0]

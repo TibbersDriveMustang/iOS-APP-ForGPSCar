@@ -6,317 +6,271 @@ provides-nominal:
 provides-member:
 - ["C6GPSCar14ViewController", ""]
 provides-dynamic-lookup:
-- "_socket"
-- "sendPacket"
-- "messageTextField"
-- "textFieldShouldReturn"
-- "localIP"
-- "hostTextField"
 - "touchesBegan"
 - "udpSocket"
-- "socket"
+- "answerTextView"
+- "sendPacket"
+- "hostTextField"
 - "remotePortTextField"
 - "viewDidLoad"
-- "answerTextView"
-- "didReceiveMemoryWarning"
+- "messageTextField"
+- "_socket"
+- "localIP"
 - "localPortTextField"
+- "socket"
+- "textFieldShouldReturn"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "dispatch_get_main_queue"
+- "UIViewController"
+- !private "!="
+- "GCDAsyncUdpSocketDelegate"
+- !private "UInt16"
+- !private "IPAddress"
+- !private "!"
+- !private "NSError"
+- "GCDAsyncUdpSocket"
+- !private "String"
+- "UITextFieldDelegate"
+- !private "BooleanLiteralType"
+- !private "NSUTF8StringEncoding"
+- "NSData"
+- "UITextView"
+- !private "+"
+- "UITextField"
+- !private "=="
 - "UIEvent"
+- "AnyObject"
+- !private "UnicodeScalarType"
+- "ViewController"
+- "UITouch"
+- !private "NSUserDefaults"
+- !private "??"
+- !private "StringLiteralType"
+- !private "dispatch_get_main_queue"
 - "Bool"
 - !private ">"
-- "GCDAsyncUdpSocket"
-- !private "NSError"
-- "UITextField"
 - "UILabel"
-- !private "!"
-- !private "NSUserDefaults"
-- !private "IPAddress"
 - "Set"
-- "UITouch"
-- !private "String"
-- !private "!="
-- !private "UInt16"
-- !private "BooleanLiteralType"
-- "UITextFieldDelegate"
-- "AnyObject"
-- "UITextView"
-- !private "??"
-- "UIViewController"
-- !private "=="
-- "NSData"
-- "GCDAsyncUdpSocketDelegate"
-- !private "+"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
-- !private "NSUTF8StringEncoding"
-- "ViewController"
 depends-member:
-- !private ["Ps9AnyObject", "GCDAsyncUdpSocket"]
-- !private ["Ps9AnyObject", "IPAddress"]
-- !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
-- !private ["Ps9AnyObject", "NSUserDefaults"]
-- !private ["Ps9AnyObject", "String"]
-- !private ["Ps9AnyObject", "UInt16"]
-- ["Ps9AnyObject", "_socket"]
-- ["Ps9AnyObject", "answerTextView"]
-- !private ["Ps9AnyObject", "beginReceiving"]
-- !private ["Ps9AnyObject", "bindToPort"]
-- !private ["Ps9AnyObject", "close"]
-- !private ["Ps9AnyObject", "dataUsingEncoding"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
-- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
-- !private ["Ps9AnyObject", "endEditing"]
-- !private ["Ps9AnyObject", "getIPAddress"]
-- ["Ps9AnyObject", "hostTextField"]
-- ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "isEmpty"]
-- ["Ps9AnyObject", "loadDefaults"]
-- ["Ps9AnyObject", "localIP"]
-- ["Ps9AnyObject", "localPortTextField"]
-- !private ["Ps9AnyObject", "localizedDescription"]
-- ["Ps9AnyObject", "log"]
-- ["Ps9AnyObject", "messageTextField"]
-- ["Ps9AnyObject", "remotePortTextField"]
-- !private ["Ps9AnyObject", "resignFirstResponder"]
-- ["Ps9AnyObject", "saveDefaults"]
-- !private ["Ps9AnyObject", "sendData"]
-- ["Ps9AnyObject", "sendPacket"]
-- !private ["Ps9AnyObject", "setObject"]
-- ["Ps9AnyObject", "socket"]
-- !private ["Ps9AnyObject", "standardUserDefaults"]
-- !private ["Ps9AnyObject", "stringForKey"]
-- !private ["Ps9AnyObject", "synchronize"]
-- !private ["Ps9AnyObject", "text"]
-- ["Ps9AnyObject", "textField"]
-- ["Ps9AnyObject", "textFieldDidBeginEditing"]
-- ["Ps9AnyObject", "textFieldDidEndEditing"]
-- ["Ps9AnyObject", "textFieldShouldBeginEditing"]
-- ["Ps9AnyObject", "textFieldShouldClear"]
-- ["Ps9AnyObject", "textFieldShouldEndEditing"]
-- ["Ps9AnyObject", "textFieldShouldReturn"]
-- ["Ps9AnyObject", "touchesBegan"]
-- ["Ps9AnyObject", "udpSocket"]
-- ["Ps9AnyObject", "udpSocketDidClose"]
-- !private ["Ps9AnyObject", "view"]
-- ["Ps9AnyObject", "viewDidLoad"]
-- ["Ps9AnyObject", ""]
-- !private ["Ps22BidirectionalIndexType", "init"]
-- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["PSs9AnyObject", "GCDAsyncUdpSocket"]
+- !private ["PSs9AnyObject", "IPAddress"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UInt16"]
+- ["PSs9AnyObject", "_socket"]
+- ["PSs9AnyObject", "answerTextView"]
+- !private ["PSs9AnyObject", "beginReceiving"]
+- !private ["PSs9AnyObject", "bindToPort"]
+- !private ["PSs9AnyObject", "close"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "dispatch_get_main_queue"]
+- !private ["PSs9AnyObject", "endEditing"]
+- !private ["PSs9AnyObject", "getIPAddress"]
+- ["PSs9AnyObject", "hostTextField"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isEmpty"]
+- ["PSs9AnyObject", "loadDefaults"]
+- ["PSs9AnyObject", "localIP"]
+- ["PSs9AnyObject", "localPortTextField"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- ["PSs9AnyObject", "log"]
+- ["PSs9AnyObject", "messageTextField"]
+- ["PSs9AnyObject", "remotePortTextField"]
+- !private ["PSs9AnyObject", "resignFirstResponder"]
+- ["PSs9AnyObject", "saveDefaults"]
+- !private ["PSs9AnyObject", "sendData"]
+- ["PSs9AnyObject", "sendPacket"]
+- !private ["PSs9AnyObject", "setObject"]
+- ["PSs9AnyObject", "socket"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "stringForKey"]
+- !private ["PSs9AnyObject", "synchronize"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "textField"]
+- ["PSs9AnyObject", "textFieldDidBeginEditing"]
+- ["PSs9AnyObject", "textFieldDidEndEditing"]
+- ["PSs9AnyObject", "textFieldShouldBeginEditing"]
+- ["PSs9AnyObject", "textFieldShouldClear"]
+- ["PSs9AnyObject", "textFieldShouldEndEditing"]
+- ["PSs9AnyObject", "textFieldShouldReturn"]
+- ["PSs9AnyObject", "touchesBegan"]
+- ["PSs9AnyObject", "udpSocket"]
+- ["PSs9AnyObject", "udpSocketDidClose"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "init"]
+- !private ["PSs21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
-- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["Ps11CVarArgType", "GCDAsyncUdpSocket"]
-- !private ["Ps11CVarArgType", "IPAddress"]
-- !private ["Ps11CVarArgType", "NSUTF8StringEncoding"]
-- !private ["Ps11CVarArgType", "NSUserDefaults"]
-- !private ["Ps11CVarArgType", "String"]
-- !private ["Ps11CVarArgType", "UInt16"]
-- ["Ps11CVarArgType", "_socket"]
-- ["Ps11CVarArgType", "answerTextView"]
-- !private ["Ps11CVarArgType", "beginReceiving"]
-- !private ["Ps11CVarArgType", "bindToPort"]
-- !private ["Ps11CVarArgType", "close"]
-- !private ["Ps11CVarArgType", "dataUsingEncoding"]
-- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
-- !private ["Ps11CVarArgType", "dispatch_get_main_queue"]
-- !private ["Ps11CVarArgType", "endEditing"]
-- !private ["Ps11CVarArgType", "getIPAddress"]
-- ["Ps11CVarArgType", "hostTextField"]
-- ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "isEmpty"]
-- ["Ps11CVarArgType", "loadDefaults"]
-- ["Ps11CVarArgType", "localIP"]
-- ["Ps11CVarArgType", "localPortTextField"]
-- !private ["Ps11CVarArgType", "localizedDescription"]
-- ["Ps11CVarArgType", "log"]
-- ["Ps11CVarArgType", "messageTextField"]
-- ["Ps11CVarArgType", "remotePortTextField"]
-- !private ["Ps11CVarArgType", "resignFirstResponder"]
-- ["Ps11CVarArgType", "saveDefaults"]
-- !private ["Ps11CVarArgType", "sendData"]
-- ["Ps11CVarArgType", "sendPacket"]
-- !private ["Ps11CVarArgType", "setObject"]
-- ["Ps11CVarArgType", "socket"]
-- !private ["Ps11CVarArgType", "standardUserDefaults"]
-- !private ["Ps11CVarArgType", "stringForKey"]
-- !private ["Ps11CVarArgType", "synchronize"]
-- !private ["Ps11CVarArgType", "text"]
-- ["Ps11CVarArgType", "textField"]
-- ["Ps11CVarArgType", "textFieldDidBeginEditing"]
-- ["Ps11CVarArgType", "textFieldDidEndEditing"]
-- ["Ps11CVarArgType", "textFieldShouldBeginEditing"]
-- ["Ps11CVarArgType", "textFieldShouldClear"]
-- ["Ps11CVarArgType", "textFieldShouldEndEditing"]
-- ["Ps11CVarArgType", "textFieldShouldReturn"]
-- ["Ps11CVarArgType", "touchesBegan"]
-- ["Ps11CVarArgType", "udpSocket"]
-- ["Ps11CVarArgType", "udpSocketDidClose"]
-- !private ["Ps11CVarArgType", "view"]
-- ["Ps11CVarArgType", "viewDidLoad"]
-- ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
-- !private ["Ps10Comparable", "dataUsingEncoding"]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps10Comparable", "isEmpty"]
-- !private ["Ps28CustomDebugStringConvertible", "GCDAsyncUdpSocket"]
-- !private ["Ps28CustomDebugStringConvertible", "IPAddress"]
-- !private ["Ps28CustomDebugStringConvertible", "NSUTF8StringEncoding"]
-- !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
-- ["Ps28CustomDebugStringConvertible", "Some"]
-- !private ["Ps28CustomDebugStringConvertible", "String"]
-- !private ["Ps28CustomDebugStringConvertible", "UInt16"]
-- ["Ps28CustomDebugStringConvertible", "_socket"]
-- ["Ps28CustomDebugStringConvertible", "answerTextView"]
-- !private ["Ps28CustomDebugStringConvertible", "beginReceiving"]
-- !private ["Ps28CustomDebugStringConvertible", "bindToPort"]
-- !private ["Ps28CustomDebugStringConvertible", "close"]
-- !private ["Ps28CustomDebugStringConvertible", "dataUsingEncoding"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
-- !private ["Ps28CustomDebugStringConvertible", "endEditing"]
-- !private ["Ps28CustomDebugStringConvertible", "getIPAddress"]
-- ["Ps28CustomDebugStringConvertible", "hostTextField"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
-- ["Ps28CustomDebugStringConvertible", "loadDefaults"]
-- ["Ps28CustomDebugStringConvertible", "localIP"]
-- ["Ps28CustomDebugStringConvertible", "localPortTextField"]
-- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
-- ["Ps28CustomDebugStringConvertible", "log"]
-- ["Ps28CustomDebugStringConvertible", "messageTextField"]
-- ["Ps28CustomDebugStringConvertible", "remotePortTextField"]
-- !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
-- ["Ps28CustomDebugStringConvertible", "saveDefaults"]
-- !private ["Ps28CustomDebugStringConvertible", "sendData"]
-- ["Ps28CustomDebugStringConvertible", "sendPacket"]
-- !private ["Ps28CustomDebugStringConvertible", "setObject"]
-- ["Ps28CustomDebugStringConvertible", "socket"]
-- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
-- !private ["Ps28CustomDebugStringConvertible", "stringForKey"]
-- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
-- !private ["Ps28CustomDebugStringConvertible", "text"]
-- ["Ps28CustomDebugStringConvertible", "textField"]
-- ["Ps28CustomDebugStringConvertible", "textFieldDidBeginEditing"]
-- ["Ps28CustomDebugStringConvertible", "textFieldDidEndEditing"]
-- ["Ps28CustomDebugStringConvertible", "textFieldShouldBeginEditing"]
-- ["Ps28CustomDebugStringConvertible", "textFieldShouldClear"]
-- ["Ps28CustomDebugStringConvertible", "textFieldShouldEndEditing"]
-- ["Ps28CustomDebugStringConvertible", "textFieldShouldReturn"]
-- ["Ps28CustomDebugStringConvertible", "touchesBegan"]
-- ["Ps28CustomDebugStringConvertible", "udpSocket"]
-- ["Ps28CustomDebugStringConvertible", "udpSocketDidClose"]
-- !private ["Ps28CustomDebugStringConvertible", "view"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "GCDAsyncUdpSocket"]
-- !private ["Ps23CustomStringConvertible", "IPAddress"]
-- !private ["Ps23CustomStringConvertible", "NSUTF8StringEncoding"]
-- !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
-- !private ["Ps23CustomStringConvertible", "String"]
-- !private ["Ps23CustomStringConvertible", "UInt16"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "_socket"]
-- ["Ps23CustomStringConvertible", "answerTextView"]
-- !private ["Ps23CustomStringConvertible", "beginReceiving"]
-- !private ["Ps23CustomStringConvertible", "bindToPort"]
-- !private ["Ps23CustomStringConvertible", "close"]
-- !private ["Ps23CustomStringConvertible", "dataUsingEncoding"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
-- !private ["Ps23CustomStringConvertible", "endEditing"]
-- !private ["Ps23CustomStringConvertible", "getIPAddress"]
-- ["Ps23CustomStringConvertible", "hostTextField"]
-- ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "isEmpty"]
-- ["Ps23CustomStringConvertible", "loadDefaults"]
-- ["Ps23CustomStringConvertible", "localIP"]
-- ["Ps23CustomStringConvertible", "localPortTextField"]
-- !private ["Ps23CustomStringConvertible", "localizedDescription"]
-- ["Ps23CustomStringConvertible", "log"]
-- ["Ps23CustomStringConvertible", "messageTextField"]
-- ["Ps23CustomStringConvertible", "remotePortTextField"]
-- !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
-- ["Ps23CustomStringConvertible", "saveDefaults"]
-- !private ["Ps23CustomStringConvertible", "sendData"]
-- ["Ps23CustomStringConvertible", "sendPacket"]
-- !private ["Ps23CustomStringConvertible", "setObject"]
-- ["Ps23CustomStringConvertible", "socket"]
-- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
-- !private ["Ps23CustomStringConvertible", "stringForKey"]
-- !private ["Ps23CustomStringConvertible", "synchronize"]
-- !private ["Ps23CustomStringConvertible", "text"]
-- ["Ps23CustomStringConvertible", "textField"]
-- ["Ps23CustomStringConvertible", "textFieldDidBeginEditing"]
-- ["Ps23CustomStringConvertible", "textFieldDidEndEditing"]
-- ["Ps23CustomStringConvertible", "textFieldShouldBeginEditing"]
-- ["Ps23CustomStringConvertible", "textFieldShouldClear"]
-- ["Ps23CustomStringConvertible", "textFieldShouldEndEditing"]
-- ["Ps23CustomStringConvertible", "textFieldShouldReturn"]
-- ["Ps23CustomStringConvertible", "touchesBegan"]
-- ["Ps23CustomStringConvertible", "udpSocket"]
-- ["Ps23CustomStringConvertible", "udpSocketDidClose"]
-- !private ["Ps23CustomStringConvertible", "view"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
-- ["Ps23CustomStringConvertible", ""]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "GCDAsyncUdpSocket"]
+- !private ["PSs11CVarArgType", "IPAddress"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UInt16"]
+- ["PSs11CVarArgType", "_socket"]
+- ["PSs11CVarArgType", "answerTextView"]
+- !private ["PSs11CVarArgType", "beginReceiving"]
+- !private ["PSs11CVarArgType", "bindToPort"]
+- !private ["PSs11CVarArgType", "close"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
+- !private ["PSs11CVarArgType", "endEditing"]
+- !private ["PSs11CVarArgType", "getIPAddress"]
+- ["PSs11CVarArgType", "hostTextField"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isEmpty"]
+- ["PSs11CVarArgType", "loadDefaults"]
+- ["PSs11CVarArgType", "localIP"]
+- ["PSs11CVarArgType", "localPortTextField"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- ["PSs11CVarArgType", "log"]
+- ["PSs11CVarArgType", "messageTextField"]
+- ["PSs11CVarArgType", "remotePortTextField"]
+- !private ["PSs11CVarArgType", "resignFirstResponder"]
+- ["PSs11CVarArgType", "saveDefaults"]
+- !private ["PSs11CVarArgType", "sendData"]
+- ["PSs11CVarArgType", "sendPacket"]
+- !private ["PSs11CVarArgType", "setObject"]
+- ["PSs11CVarArgType", "socket"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "stringForKey"]
+- !private ["PSs11CVarArgType", "synchronize"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "textField"]
+- ["PSs11CVarArgType", "textFieldDidBeginEditing"]
+- ["PSs11CVarArgType", "textFieldDidEndEditing"]
+- ["PSs11CVarArgType", "textFieldShouldBeginEditing"]
+- ["PSs11CVarArgType", "textFieldShouldClear"]
+- ["PSs11CVarArgType", "textFieldShouldEndEditing"]
+- ["PSs11CVarArgType", "textFieldShouldReturn"]
+- ["PSs11CVarArgType", "touchesBegan"]
+- ["PSs11CVarArgType", "udpSocket"]
+- ["PSs11CVarArgType", "udpSocketDidClose"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "isEmpty"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
+- !private ["PSs23CustomStringConvertible", "GCDAsyncUdpSocket"]
+- !private ["PSs23CustomStringConvertible", "IPAddress"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "UInt16"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "_socket"]
+- ["PSs23CustomStringConvertible", "answerTextView"]
+- !private ["PSs23CustomStringConvertible", "beginReceiving"]
+- !private ["PSs23CustomStringConvertible", "bindToPort"]
+- !private ["PSs23CustomStringConvertible", "close"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
+- !private ["PSs23CustomStringConvertible", "endEditing"]
+- !private ["PSs23CustomStringConvertible", "getIPAddress"]
+- ["PSs23CustomStringConvertible", "hostTextField"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isEmpty"]
+- ["PSs23CustomStringConvertible", "loadDefaults"]
+- ["PSs23CustomStringConvertible", "localIP"]
+- ["PSs23CustomStringConvertible", "localPortTextField"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- ["PSs23CustomStringConvertible", "log"]
+- ["PSs23CustomStringConvertible", "messageTextField"]
+- ["PSs23CustomStringConvertible", "remotePortTextField"]
+- !private ["PSs23CustomStringConvertible", "resignFirstResponder"]
+- ["PSs23CustomStringConvertible", "saveDefaults"]
+- !private ["PSs23CustomStringConvertible", "sendData"]
+- ["PSs23CustomStringConvertible", "sendPacket"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
+- ["PSs23CustomStringConvertible", "socket"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "stringForKey"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "textField"]
+- ["PSs23CustomStringConvertible", "textFieldDidBeginEditing"]
+- ["PSs23CustomStringConvertible", "textFieldDidEndEditing"]
+- ["PSs23CustomStringConvertible", "textFieldShouldBeginEditing"]
+- ["PSs23CustomStringConvertible", "textFieldShouldClear"]
+- ["PSs23CustomStringConvertible", "textFieldShouldEndEditing"]
+- ["PSs23CustomStringConvertible", "textFieldShouldReturn"]
+- ["PSs23CustomStringConvertible", "touchesBegan"]
+- ["PSs23CustomStringConvertible", "udpSocket"]
+- ["PSs23CustomStringConvertible", "udpSocketDidClose"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
-- !private ["Ps9Equatable", "GCDAsyncUdpSocket"]
-- !private ["Ps9Equatable", "IPAddress"]
-- !private ["Ps9Equatable", "NSUTF8StringEncoding"]
-- !private ["Ps9Equatable", "NSUserDefaults"]
-- !private ["Ps9Equatable", "String"]
-- !private ["Ps9Equatable", "UInt16"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "_socket"]
-- ["Ps9Equatable", "answerTextView"]
-- !private ["Ps9Equatable", "beginReceiving"]
-- !private ["Ps9Equatable", "bindToPort"]
-- !private ["Ps9Equatable", "close"]
-- !private ["Ps9Equatable", "dataUsingEncoding"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
-- !private ["Ps9Equatable", "dispatch_get_main_queue"]
-- !private ["Ps9Equatable", "endEditing"]
-- !private ["Ps9Equatable", "getIPAddress"]
-- ["Ps9Equatable", "hostTextField"]
-- ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "isEmpty"]
-- ["Ps9Equatable", "loadDefaults"]
-- ["Ps9Equatable", "localIP"]
-- ["Ps9Equatable", "localPortTextField"]
-- !private ["Ps9Equatable", "localizedDescription"]
-- ["Ps9Equatable", "log"]
-- ["Ps9Equatable", "messageTextField"]
-- ["Ps9Equatable", "remotePortTextField"]
-- !private ["Ps9Equatable", "resignFirstResponder"]
-- ["Ps9Equatable", "saveDefaults"]
-- !private ["Ps9Equatable", "sendData"]
-- ["Ps9Equatable", "sendPacket"]
-- !private ["Ps9Equatable", "setObject"]
-- ["Ps9Equatable", "socket"]
-- !private ["Ps9Equatable", "standardUserDefaults"]
-- !private ["Ps9Equatable", "stringForKey"]
-- !private ["Ps9Equatable", "synchronize"]
-- !private ["Ps9Equatable", "text"]
-- ["Ps9Equatable", "textField"]
-- ["Ps9Equatable", "textFieldDidBeginEditing"]
-- ["Ps9Equatable", "textFieldDidEndEditing"]
-- ["Ps9Equatable", "textFieldShouldBeginEditing"]
-- ["Ps9Equatable", "textFieldShouldClear"]
-- ["Ps9Equatable", "textFieldShouldEndEditing"]
-- ["Ps9Equatable", "textFieldShouldReturn"]
-- ["Ps9Equatable", "touchesBegan"]
-- ["Ps9Equatable", "udpSocket"]
-- ["Ps9Equatable", "udpSocketDidClose"]
-- !private ["Ps9Equatable", "view"]
-- ["Ps9Equatable", "viewDidLoad"]
-- ["Ps9Equatable", ""]
-- !private ["Ps9ErrorType", "localizedDescription"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs9Equatable", "GCDAsyncUdpSocket"]
+- !private ["PSs9Equatable", "IPAddress"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "UInt16"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "_socket"]
+- ["PSs9Equatable", "answerTextView"]
+- !private ["PSs9Equatable", "beginReceiving"]
+- !private ["PSs9Equatable", "bindToPort"]
+- !private ["PSs9Equatable", "close"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "dispatch_get_main_queue"]
+- !private ["PSs9Equatable", "endEditing"]
+- !private ["PSs9Equatable", "getIPAddress"]
+- ["PSs9Equatable", "hostTextField"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isEmpty"]
+- ["PSs9Equatable", "loadDefaults"]
+- ["PSs9Equatable", "localIP"]
+- ["PSs9Equatable", "localPortTextField"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- ["PSs9Equatable", "log"]
+- ["PSs9Equatable", "messageTextField"]
+- ["PSs9Equatable", "remotePortTextField"]
+- !private ["PSs9Equatable", "resignFirstResponder"]
+- ["PSs9Equatable", "saveDefaults"]
+- !private ["PSs9Equatable", "sendData"]
+- ["PSs9Equatable", "sendPacket"]
+- !private ["PSs9Equatable", "setObject"]
+- ["PSs9Equatable", "socket"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "stringForKey"]
+- !private ["PSs9Equatable", "synchronize"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "textField"]
+- ["PSs9Equatable", "textFieldDidBeginEditing"]
+- ["PSs9Equatable", "textFieldDidEndEditing"]
+- ["PSs9Equatable", "textFieldShouldBeginEditing"]
+- ["PSs9Equatable", "textFieldShouldClear"]
+- ["PSs9Equatable", "textFieldShouldEndEditing"]
+- ["PSs9Equatable", "textFieldShouldReturn"]
+- ["PSs9Equatable", "touchesBegan"]
+- ["PSs9Equatable", "udpSocket"]
+- ["PSs9Equatable", "udpSocketDidClose"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
 - !private ["Sf", "deinit"]
-- !private ["Ps16ForwardIndexType", "init"]
+- !private ["PSs16ForwardIndexType", "init"]
 - !private ["CSo17GCDAsyncUdpSocket", "beginReceiving"]
 - !private ["CSo17GCDAsyncUdpSocket", "bindToPort"]
 - !private ["CSo17GCDAsyncUdpSocket", "close"]
@@ -352,69 +306,69 @@ depends-member:
 - ["PSo25GCDAsyncUdpSocketDelegate", "udpSocketDidClose"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "view"]
 - ["PSo25GCDAsyncUdpSocketDelegate", ""]
-- !private ["Ps8Hashable", "GCDAsyncUdpSocket"]
-- !private ["Ps8Hashable", "IPAddress"]
-- !private ["Ps8Hashable", "NSUTF8StringEncoding"]
-- !private ["Ps8Hashable", "NSUserDefaults"]
-- !private ["Ps8Hashable", "String"]
-- !private ["Ps8Hashable", "UInt16"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "_socket"]
-- ["Ps8Hashable", "answerTextView"]
-- !private ["Ps8Hashable", "beginReceiving"]
-- !private ["Ps8Hashable", "bindToPort"]
-- !private ["Ps8Hashable", "close"]
-- !private ["Ps8Hashable", "dataUsingEncoding"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps8Hashable", "dispatch_get_main_queue"]
-- !private ["Ps8Hashable", "endEditing"]
-- !private ["Ps8Hashable", "getIPAddress"]
-- ["Ps8Hashable", "hostTextField"]
-- ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "isEmpty"]
-- ["Ps8Hashable", "loadDefaults"]
-- ["Ps8Hashable", "localIP"]
-- ["Ps8Hashable", "localPortTextField"]
-- !private ["Ps8Hashable", "localizedDescription"]
-- ["Ps8Hashable", "log"]
-- ["Ps8Hashable", "messageTextField"]
-- ["Ps8Hashable", "remotePortTextField"]
-- !private ["Ps8Hashable", "resignFirstResponder"]
-- ["Ps8Hashable", "saveDefaults"]
-- !private ["Ps8Hashable", "sendData"]
-- ["Ps8Hashable", "sendPacket"]
-- !private ["Ps8Hashable", "setObject"]
-- ["Ps8Hashable", "socket"]
-- !private ["Ps8Hashable", "standardUserDefaults"]
-- !private ["Ps8Hashable", "stringForKey"]
-- !private ["Ps8Hashable", "synchronize"]
-- !private ["Ps8Hashable", "text"]
-- ["Ps8Hashable", "textField"]
-- ["Ps8Hashable", "textFieldDidBeginEditing"]
-- ["Ps8Hashable", "textFieldDidEndEditing"]
-- ["Ps8Hashable", "textFieldShouldBeginEditing"]
-- ["Ps8Hashable", "textFieldShouldClear"]
-- ["Ps8Hashable", "textFieldShouldEndEditing"]
-- ["Ps8Hashable", "textFieldShouldReturn"]
-- ["Ps8Hashable", "touchesBegan"]
-- ["Ps8Hashable", "udpSocket"]
-- ["Ps8Hashable", "udpSocketDidClose"]
-- !private ["Ps8Hashable", "view"]
-- ["Ps8Hashable", "viewDidLoad"]
-- ["Ps8Hashable", ""]
+- !private ["PSs8Hashable", "GCDAsyncUdpSocket"]
+- !private ["PSs8Hashable", "IPAddress"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UInt16"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "_socket"]
+- ["PSs8Hashable", "answerTextView"]
+- !private ["PSs8Hashable", "beginReceiving"]
+- !private ["PSs8Hashable", "bindToPort"]
+- !private ["PSs8Hashable", "close"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "dispatch_get_main_queue"]
+- !private ["PSs8Hashable", "endEditing"]
+- !private ["PSs8Hashable", "getIPAddress"]
+- ["PSs8Hashable", "hostTextField"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isEmpty"]
+- ["PSs8Hashable", "loadDefaults"]
+- ["PSs8Hashable", "localIP"]
+- ["PSs8Hashable", "localPortTextField"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- ["PSs8Hashable", "log"]
+- ["PSs8Hashable", "messageTextField"]
+- ["PSs8Hashable", "remotePortTextField"]
+- !private ["PSs8Hashable", "resignFirstResponder"]
+- ["PSs8Hashable", "saveDefaults"]
+- !private ["PSs8Hashable", "sendData"]
+- ["PSs8Hashable", "sendPacket"]
+- !private ["PSs8Hashable", "setObject"]
+- ["PSs8Hashable", "socket"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "stringForKey"]
+- !private ["PSs8Hashable", "synchronize"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "textField"]
+- ["PSs8Hashable", "textFieldDidBeginEditing"]
+- ["PSs8Hashable", "textFieldDidEndEditing"]
+- ["PSs8Hashable", "textFieldShouldBeginEditing"]
+- ["PSs8Hashable", "textFieldShouldClear"]
+- ["PSs8Hashable", "textFieldShouldEndEditing"]
+- ["PSs8Hashable", "textFieldShouldReturn"]
+- ["PSs8Hashable", "touchesBegan"]
+- ["PSs8Hashable", "udpSocket"]
+- ["PSs8Hashable", "udpSocketDidClose"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
 - !private ["CSo9IPAddress", "getIPAddress"]
 - !private ["CSo9IPAddress", "init"]
 - !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps21IntegerArithmeticType", "init"]
-- !private ["Ps25IntegerLiteralConvertible", "init"]
-- !private ["Ps11IntegerType", "init"]
-- !private ["Ps14MirrorPathType", "dataUsingEncoding"]
-- !private ["Ps14MirrorPathType", "init"]
-- !private ["Ps14MirrorPathType", "isEmpty"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "init"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSs11IntegerType", "init"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs14MirrorPathType", "isEmpty"]
 - !private ["PSo8NSCoding", "GCDAsyncUdpSocket"]
 - !private ["PSo8NSCoding", "IPAddress"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
@@ -615,27 +569,27 @@ depends-member:
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["CSo14NSUserDefaults", "stringForKey"]
 - !private ["CSo14NSUserDefaults", "synchronize"]
-- ["Ps21NilLiteralConvertible", "Some"]
+- ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "dataUsingEncoding"]
-- !private ["Ps16OutputStreamType", "init"]
-- !private ["Ps16OutputStreamType", "isEmpty"]
-- !private ["Ps21RandomAccessIndexType", "init"]
-- !private ["Ps10Streamable", "dataUsingEncoding"]
-- !private ["Ps10Streamable", "init"]
-- !private ["Ps10Streamable", "isEmpty"]
-- !private ["Ps10Strideable", "init"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs16OutputStreamType", "isEmpty"]
+- !private ["PSs21RandomAccessIndexType", "init"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Streamable", "isEmpty"]
+- !private ["PSs10Strideable", "init"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "isEmpty"]
-- !private ["Ps30StringInterpolationConvertible", "dataUsingEncoding"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps30StringInterpolationConvertible", "isEmpty"]
-- !private ["Ps24StringLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps24StringLiteralConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "isEmpty"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs30StringInterpolationConvertible", "isEmpty"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "isEmpty"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -964,16 +918,16 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt16", "init"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt16", "init"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "isEmpty"]
-- !private ["Ps19UnsignedIntegerType", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs19UnsignedIntegerType", "init"]
 - ["C6GPSCar14ViewController", "AnyObject"]
 - ["C6GPSCar14ViewController", "Bool"]
 - ["C6GPSCar14ViewController", "GCDAsyncUdpSocket"]
@@ -1018,70 +972,74 @@ depends-member:
 - ["C6GPSCar14ViewController", "udpSocketDidClose"]
 - !private ["C6GPSCar14ViewController", "view"]
 - ["C6GPSCar14ViewController", "viewDidLoad"]
-- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
-- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "isEmpty"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
-- !private ["Ps14_Incrementable", "init"]
-- !private ["Ps22_IntegerArithmeticType", "init"]
-- !private ["Ps12_IntegerType", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "dataUsingEncoding"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps22_RandomAccessAmbiguity", "init"]
-- ["Ps12_Reflectable", "Some"]
-- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "dataUsingEncoding"]
-- !private ["Ps12_Reflectable", "endEditing"]
-- !private ["Ps12_Reflectable", "init"]
-- !private ["Ps12_Reflectable", "isEmpty"]
-- !private ["Ps12_Reflectable", "resignFirstResponder"]
-- !private ["Ps12_Reflectable", "text"]
-- !private ["Ps18_StringElementType", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "isEmpty"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs16_CocoaStringType", "isEmpty"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "init"]
+- !private ["PSs14_Incrementable", "init"]
+- !private ["PSs22_IntegerArithmeticType", "init"]
+- !private ["PSs12_IntegerType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "init"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "endEditing"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "isEmpty"]
+- !private ["PSs12_Reflectable", "resignFirstResponder"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs11_Strideable", "init"]
+- !private ["PSs18_StringElementType", "init"]
 depends-nominal:
-- "Ps9AnyObject"
-- !private "Ps22BidirectionalIndexType"
-- !private "Ps21BitwiseOperationsType"
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
 - !private "Sb"
-- !private "Ps25BooleanLiteralConvertible"
-- !private "Ps11BooleanType"
-- "Ps11CVarArgType"
-- !private "Vs9Character"
-- !private "Ps10Comparable"
-- "Ps28CustomDebugStringConvertible"
-- "Ps23CustomStringConvertible"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
 - !private "Sd"
-- "Ps9Equatable"
-- !private "Ps9ErrorType"
-- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
-- !private "Ps16ForwardIndexType"
+- !private "PSs16ForwardIndexType"
 - !private "CSo17GCDAsyncUdpSocket"
 - "PSo25GCDAsyncUdpSocketDelegate"
-- "Ps8Hashable"
+- "PSs8Hashable"
 - !private "CSo9IPAddress"
 - !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps21IntegerArithmeticType"
-- !private "Ps25IntegerLiteralConvertible"
-- !private "Ps11IntegerType"
-- !private "Ps14MirrorPathType"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
@@ -1092,15 +1050,15 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo14NSUserDefaults"
-- "Ps21NilLiteralConvertible"
+- "PSs21NilLiteralConvertible"
 - "Sq"
-- !private "Ps16OutputStreamType"
-- !private "Ps21RandomAccessIndexType"
-- !private "Ps10Streamable"
-- !private "Ps10Strideable"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
 - !private "SS"
-- !private "Ps30StringInterpolationConvertible"
-- !private "Ps24StringLiteralConvertible"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1123,35 +1081,37 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
 - !private "Sc"
-- !private "Ps31UnicodeScalarLiteralConvertible"
-- !private "Ps19UnsignedIntegerType"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs19UnsignedIntegerType"
 - "C6GPSCar14ViewController"
-- !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "Ps33_BuiltinIntegerLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "Ps28_DisallowMixedSignArithmetic"
-- !private "Ps14_Incrementable"
-- !private "Ps22_IntegerArithmeticType"
-- !private "Ps12_IntegerType"
-- !private "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
-- !private "Ps22_RandomAccessAmbiguity"
-- "Ps12_Reflectable"
-- !private "Ps18_StringElementType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs28_DisallowMixedSignArithmetic"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+- !private "PSs18_StringElementType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/Network-swift.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/IPAddress.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/ifaddrs.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk/usr/include/ifaddrs.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

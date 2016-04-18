@@ -7,46 +7,41 @@ provides-member:
 - ["C6GPSCar11AppDelegate", ""]
 provides-dynamic-lookup:
 - "application"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
-- "applicationDidFinishLaunching"
 - "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
-- "window"
 - "applicationDidBecomeActive"
+- "applicationWillTerminate"
+- "window"
 depends-top-level:
+- "UIWindow"
+- "NSObject"
+- "UIResponder"
+- "AppDelegate"
 - "Bool"
 - "UIApplication"
-- "UIWindow"
-- "AnyObject"
-- "UIResponder"
-- "NSObject"
 - !private "BooleanLiteralType"
 - "UIApplicationDelegate"
-- "AppDelegate"
-- !private "NSThread"
+- "AnyObject"
 depends-member:
-- !private ["Ps9AnyObject", "NSThread"]
-- ["Ps9AnyObject", "application"]
-- ["Ps9AnyObject", "applicationDidBecomeActive"]
-- ["Ps9AnyObject", "applicationDidEnterBackground"]
-- ["Ps9AnyObject", "applicationDidFinishLaunching"]
-- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
-- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
-- ["Ps9AnyObject", "applicationSignificantTimeChange"]
-- ["Ps9AnyObject", "applicationWillEnterForeground"]
-- ["Ps9AnyObject", "applicationWillResignActive"]
-- ["Ps9AnyObject", "applicationWillTerminate"]
-- ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "sleepForTimeInterval"]
-- ["Ps9AnyObject", "window"]
-- ["Ps9AnyObject", ""]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "window"]
+- ["PSs9AnyObject", ""]
 - ["C6GPSCar11AppDelegate", "AnyObject"]
 - ["C6GPSCar11AppDelegate", "Bool"]
 - ["C6GPSCar11AppDelegate", "NSObject"]
-- !private ["C6GPSCar11AppDelegate", "NSThread"]
 - ["C6GPSCar11AppDelegate", "UIApplication"]
 - ["C6GPSCar11AppDelegate", "UIWindow"]
 - ["C6GPSCar11AppDelegate", "application"]
@@ -64,95 +59,69 @@ depends-member:
 - ["C6GPSCar11AppDelegate", "deinit"]
 - ["C6GPSCar11AppDelegate", "init"]
 - ["C6GPSCar11AppDelegate", "window"]
-- !private ["Ps11CVarArgType", "NSThread"]
-- ["Ps11CVarArgType", "application"]
-- ["Ps11CVarArgType", "applicationDidBecomeActive"]
-- ["Ps11CVarArgType", "applicationDidEnterBackground"]
-- ["Ps11CVarArgType", "applicationDidFinishLaunching"]
-- ["Ps11CVarArgType", "applicationDidReceiveMemoryWarning"]
-- ["Ps11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps11CVarArgType", "applicationShouldRequestHealthAuthorization"]
-- ["Ps11CVarArgType", "applicationSignificantTimeChange"]
-- ["Ps11CVarArgType", "applicationWillEnterForeground"]
-- ["Ps11CVarArgType", "applicationWillResignActive"]
-- ["Ps11CVarArgType", "applicationWillTerminate"]
-- ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "sleepForTimeInterval"]
-- ["Ps11CVarArgType", "window"]
-- ["Ps11CVarArgType", ""]
-- !private ["Ps28CustomDebugStringConvertible", "NSThread"]
-- ["Ps28CustomDebugStringConvertible", "application"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
-- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
-- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "sleepForTimeInterval"]
-- ["Ps28CustomDebugStringConvertible", "window"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "NSThread"]
-- ["Ps23CustomStringConvertible", "application"]
-- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
-- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
-- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
-- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
-- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
-- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
-- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
-- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
-- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
-- ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "sleepForTimeInterval"]
-- ["Ps23CustomStringConvertible", "window"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "NSThread"]
-- ["Ps9Equatable", "application"]
-- ["Ps9Equatable", "applicationDidBecomeActive"]
-- ["Ps9Equatable", "applicationDidEnterBackground"]
-- ["Ps9Equatable", "applicationDidFinishLaunching"]
-- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
-- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
-- ["Ps9Equatable", "applicationSignificantTimeChange"]
-- ["Ps9Equatable", "applicationWillEnterForeground"]
-- ["Ps9Equatable", "applicationWillResignActive"]
-- ["Ps9Equatable", "applicationWillTerminate"]
-- ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "sleepForTimeInterval"]
-- ["Ps9Equatable", "window"]
-- ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "NSThread"]
-- ["Ps8Hashable", "application"]
-- ["Ps8Hashable", "applicationDidBecomeActive"]
-- ["Ps8Hashable", "applicationDidEnterBackground"]
-- ["Ps8Hashable", "applicationDidFinishLaunching"]
-- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
-- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
-- ["Ps8Hashable", "applicationSignificantTimeChange"]
-- ["Ps8Hashable", "applicationWillEnterForeground"]
-- ["Ps8Hashable", "applicationWillResignActive"]
-- ["Ps8Hashable", "applicationWillTerminate"]
-- ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "sleepForTimeInterval"]
-- ["Ps8Hashable", "window"]
-- ["Ps8Hashable", ""]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "window"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "window"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "window"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "window"]
+- ["PSs8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSObject"]
-- !private ["CSo8NSObject", "NSThread"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
@@ -168,9 +137,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "sleepForTimeInterval"]
 - ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "NSThread"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -184,11 +151,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "sleepForTimeInterval"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["CSo8NSThread", "sleepForTimeInterval"]
-- !private ["PSo21UIApplicationDelegate", "NSThread"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -206,7 +170,6 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "NSObject"]
-- !private ["CSo11UIResponder", "NSThread"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
@@ -225,16 +188,14 @@ depends-member:
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 depends-nominal:
-- "Ps9AnyObject"
+- "PSs9AnyObject"
 - "C6GPSCar11AppDelegate"
-- "Ps11CVarArgType"
-- "Ps28CustomDebugStringConvertible"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- "Ps8Hashable"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "CSo8NSThread"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 depends-dynamic-lookup:
@@ -242,7 +203,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/Network-swift.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/IPAddress.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/ifaddrs.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk/usr/include/ifaddrs.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -256,4 +217,4 @@ depends-external:
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/AsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Modules/module.modulemap"
-interface-hash: "45f3e1da325bfcc319eb0ff5fcd76fbb"
+interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
