@@ -117,7 +117,9 @@ SWIFT_CLASS("_TtC6GPSCar11AppDelegate")
 @end
 
 @class CLLocationManager;
+@class MKPointAnnotation;
 @class GCDAsyncUdpSocket;
+@class UIGestureRecognizer;
 @class NSData;
 @class UITouch;
 @class UIEvent;
@@ -141,12 +143,14 @@ SWIFT_CLASS("_TtC6GPSCar14ViewController")
 @property (nonatomic) CLLocationDegrees longitude;
 @property (nonatomic) CLLocationDegrees latDelta;
 @property (nonatomic) CLLocationDegrees lonDelta;
+@property (nonatomic, strong) MKPointAnnotation * _Nonnull annotation;
 
 /// <hr/>
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified localIP;
 @property (nonatomic, strong) GCDAsyncUdpSocket * _Nullable _socket;
 @property (nonatomic, strong) GCDAsyncUdpSocket * _Nullable socket;
 - (void)viewDidLoad;
+- (void)action:(UIGestureRecognizer * _Nonnull)gestureRecognizer;
 - (void)didReceiveMemoryWarning;
 - (IBAction)sendPacket:(id _Nonnull)sender;
 - (void)udpSocket:(GCDAsyncUdpSocket * _Null_unspecified)sock didReceiveData:(NSData * _Null_unspecified)data fromAddress:(NSData * _Null_unspecified)address withFilterContext:(id _Null_unspecified)filterContext;

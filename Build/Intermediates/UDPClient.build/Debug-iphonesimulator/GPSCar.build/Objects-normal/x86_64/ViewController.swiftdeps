@@ -6,69 +6,74 @@ provides-nominal:
 provides-member:
 - ["C6GPSCar14ViewController", ""]
 provides-dynamic-lookup:
-- "latitude"
-- "_socket"
 - "answerTextView"
 - "touchesBegan"
-- "lonDelta"
-- "textFieldShouldReturn"
-- "latDelta"
-- "remotePortTextField"
-- "messageTextField"
-- "didReceiveMemoryWarning"
-- "udpSocket"
-- "locationManager"
-- "localIP"
-- "hostTextField"
-- "Map_show"
-- "localPortTextField"
-- "viewDidLoad"
-- "longitude"
 - "socket"
+- "udpSocket"
+- "latDelta"
+- "didReceiveMemoryWarning"
+- "remotePortTextField"
+- "lonDelta"
+- "action"
+- "latitude"
+- "localIP"
+- "longitude"
+- "textFieldShouldReturn"
+- "hostTextField"
+- "_socket"
+- "messageTextField"
+- "Map_show"
+- "viewDidLoad"
+- "locationManager"
 - "sendPacket"
+- "annotation"
+- "localPortTextField"
 depends-top-level:
-- "UITextFieldDelegate"
-- !private "UnicodeScalarType"
-- !private "StringLiteralType"
-- !private "+"
-- "MKMapViewDelegate"
 - "UIViewController"
-- !private "!="
-- "GCDAsyncUdpSocketDelegate"
-- "CLLocationDegrees"
-- !private "String"
-- "GCDAsyncUdpSocket"
-- "NSData"
-- "CLLocationManager"
-- "UILabel"
-- "AnyObject"
-- !private "NSUserDefaults"
-- "Bool"
-- !private ">"
-- "Set"
-- "CLLocationManagerDelegate"
-- "UITouch"
-- !private "=="
-- !private "CLLocationCoordinate2DMake"
-- !private "CLLocationCoordinate2D"
-- "UITextView"
-- "UIEvent"
 - !private "??"
-- !private "dispatch_get_main_queue"
-- "UITextField"
-- !private "MKCoordinateSpan"
-- !private "BooleanLiteralType"
-- !private "NSError"
-- !private "IPAddress"
-- !private "!"
-- !private "UInt16"
-- !private "MKCoordinateRegionMake"
-- !private "NSUTF8StringEncoding"
-- !private "kCLLocationAccuracyBest"
-- "ViewController"
-- !private "MKCoordinateSpanMake"
+- !private "UnicodeScalarType"
+- "GCDAsyncUdpSocketDelegate"
+- !private "NSUserDefaults"
+- "UITouch"
+- "Set"
+- "UITextFieldDelegate"
+- "Bool"
+- "CLLocationManager"
 - !private "MKCoordinateRegion"
+- "MKMapViewDelegate"
+- !private "=="
+- !private "dispatch_get_main_queue"
+- !private "MKCoordinateRegionMake"
+- "CLLocationManagerDelegate"
+- "UILabel"
+- !private "StringLiteralType"
+- "UIEvent"
+- "CLLocationDegrees"
+- !private "UInt16"
+- "UITextView"
+- !private "+"
+- !private "String"
+- !private "NSError"
+- !private "NSUTF8StringEncoding"
+- "NSData"
+- !private "kCLLocationAccuracyBest"
+- !private "UILongPressGestureRecognizer"
+- !private ">"
 - "MKMapView"
+- "UIGestureRecognizer"
+- !private "CLLocationCoordinate2D"
+- !private "CLLocationCoordinate2DMake"
+- !private "MKCoordinateSpanMake"
+- "UITextField"
+- "AnyObject"
+- !private "IPAddress"
+- "MKPointAnnotation"
+- "ViewController"
+- !private "!="
+- !private "!"
+- "GCDAsyncUdpSocket"
+- !private "BooleanLiteralType"
+- !private "MKCoordinateSpan"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
 - ["Ps9AnyObject", "CLLocationManager"]
@@ -76,16 +81,24 @@ depends-member:
 - !private ["Ps9AnyObject", "IPAddress"]
 - !private ["Ps9AnyObject", "MKCoordinateRegionMake"]
 - !private ["Ps9AnyObject", "MKCoordinateSpanMake"]
+- ["Ps9AnyObject", "MKPointAnnotation"]
 - ["Ps9AnyObject", "Map_show"]
 - !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
 - !private ["Ps9AnyObject", "NSUserDefaults"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UILongPressGestureRecognizer"]
 - !private ["Ps9AnyObject", "UInt16"]
 - ["Ps9AnyObject", "_socket"]
+- ["Ps9AnyObject", "action"]
+- !private ["Ps9AnyObject", "addAnnotation"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- ["Ps9AnyObject", "annotation"]
 - ["Ps9AnyObject", "answerTextView"]
 - !private ["Ps9AnyObject", "beginReceiving"]
 - !private ["Ps9AnyObject", "bindToPort"]
 - !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "convertPoint"]
+- !private ["Ps9AnyObject", "coordinate"]
 - !private ["Ps9AnyObject", "dataUsingEncoding"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "desiredAccuracy"]
@@ -103,6 +116,7 @@ depends-member:
 - ["Ps9AnyObject", "localIP"]
 - ["Ps9AnyObject", "localPortTextField"]
 - !private ["Ps9AnyObject", "localizedDescription"]
+- !private ["Ps9AnyObject", "locationInView"]
 - ["Ps9AnyObject", "locationManager"]
 - ["Ps9AnyObject", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9AnyObject", "locationManagerDidResumeLocationUpdates"]
@@ -119,6 +133,7 @@ depends-member:
 - ["Ps9AnyObject", "mapViewWillStartLocatingUser"]
 - ["Ps9AnyObject", "mapViewWillStartRenderingMap"]
 - ["Ps9AnyObject", "messageTextField"]
+- !private ["Ps9AnyObject", "minimumPressDuration"]
 - ["Ps9AnyObject", "remotePortTextField"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
@@ -140,6 +155,7 @@ depends-member:
 - ["Ps9AnyObject", "textFieldShouldClear"]
 - ["Ps9AnyObject", "textFieldShouldEndEditing"]
 - ["Ps9AnyObject", "textFieldShouldReturn"]
+- !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "udpSocket"]
 - ["Ps9AnyObject", "udpSocketDidClose"]
@@ -163,12 +179,16 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "IPAddress"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCoordinateRegionMake"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCoordinateSpanMake"]
+- ["PSo25CLLocationManagerDelegate", "MKPointAnnotation"]
 - !private ["PSo25CLLocationManagerDelegate", "Map_show"]
 - !private ["PSo25CLLocationManagerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo25CLLocationManagerDelegate", "NSUserDefaults"]
 - !private ["PSo25CLLocationManagerDelegate", "String"]
+- !private ["PSo25CLLocationManagerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo25CLLocationManagerDelegate", "UInt16"]
 - !private ["PSo25CLLocationManagerDelegate", "_socket"]
+- !private ["PSo25CLLocationManagerDelegate", "action"]
+- !private ["PSo25CLLocationManagerDelegate", "annotation"]
 - !private ["PSo25CLLocationManagerDelegate", "answerTextView"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25CLLocationManagerDelegate", "hostTextField"]
@@ -215,16 +235,24 @@ depends-member:
 - !private ["Ps11CVarArgType", "IPAddress"]
 - !private ["Ps11CVarArgType", "MKCoordinateRegionMake"]
 - !private ["Ps11CVarArgType", "MKCoordinateSpanMake"]
+- ["Ps11CVarArgType", "MKPointAnnotation"]
 - ["Ps11CVarArgType", "Map_show"]
 - !private ["Ps11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["Ps11CVarArgType", "NSUserDefaults"]
 - !private ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "UILongPressGestureRecognizer"]
 - !private ["Ps11CVarArgType", "UInt16"]
 - ["Ps11CVarArgType", "_socket"]
+- ["Ps11CVarArgType", "action"]
+- !private ["Ps11CVarArgType", "addAnnotation"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- ["Ps11CVarArgType", "annotation"]
 - ["Ps11CVarArgType", "answerTextView"]
 - !private ["Ps11CVarArgType", "beginReceiving"]
 - !private ["Ps11CVarArgType", "bindToPort"]
 - !private ["Ps11CVarArgType", "close"]
+- !private ["Ps11CVarArgType", "convertPoint"]
+- !private ["Ps11CVarArgType", "coordinate"]
 - !private ["Ps11CVarArgType", "dataUsingEncoding"]
 - !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "desiredAccuracy"]
@@ -242,6 +270,7 @@ depends-member:
 - ["Ps11CVarArgType", "localIP"]
 - ["Ps11CVarArgType", "localPortTextField"]
 - !private ["Ps11CVarArgType", "localizedDescription"]
+- !private ["Ps11CVarArgType", "locationInView"]
 - ["Ps11CVarArgType", "locationManager"]
 - ["Ps11CVarArgType", "locationManagerDidPauseLocationUpdates"]
 - ["Ps11CVarArgType", "locationManagerDidResumeLocationUpdates"]
@@ -258,6 +287,7 @@ depends-member:
 - ["Ps11CVarArgType", "mapViewWillStartLocatingUser"]
 - ["Ps11CVarArgType", "mapViewWillStartRenderingMap"]
 - ["Ps11CVarArgType", "messageTextField"]
+- !private ["Ps11CVarArgType", "minimumPressDuration"]
 - ["Ps11CVarArgType", "remotePortTextField"]
 - !private ["Ps11CVarArgType", "requestWhenInUseAuthorization"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
@@ -279,6 +309,7 @@ depends-member:
 - ["Ps11CVarArgType", "textFieldShouldClear"]
 - ["Ps11CVarArgType", "textFieldShouldEndEditing"]
 - ["Ps11CVarArgType", "textFieldShouldReturn"]
+- !private ["Ps11CVarArgType", "title"]
 - ["Ps11CVarArgType", "touchesBegan"]
 - ["Ps11CVarArgType", "udpSocket"]
 - ["Ps11CVarArgType", "udpSocketDidClose"]
@@ -295,17 +326,25 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "IPAddress"]
 - !private ["Ps28CustomDebugStringConvertible", "MKCoordinateRegionMake"]
 - !private ["Ps28CustomDebugStringConvertible", "MKCoordinateSpanMake"]
+- ["Ps28CustomDebugStringConvertible", "MKPointAnnotation"]
 - ["Ps28CustomDebugStringConvertible", "Map_show"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUTF8StringEncoding"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UInt16"]
 - ["Ps28CustomDebugStringConvertible", "_socket"]
+- ["Ps28CustomDebugStringConvertible", "action"]
+- !private ["Ps28CustomDebugStringConvertible", "addAnnotation"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- ["Ps28CustomDebugStringConvertible", "annotation"]
 - ["Ps28CustomDebugStringConvertible", "answerTextView"]
 - !private ["Ps28CustomDebugStringConvertible", "beginReceiving"]
 - !private ["Ps28CustomDebugStringConvertible", "bindToPort"]
 - !private ["Ps28CustomDebugStringConvertible", "close"]
+- !private ["Ps28CustomDebugStringConvertible", "convertPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "coordinate"]
 - !private ["Ps28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
@@ -323,6 +362,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "localIP"]
 - ["Ps28CustomDebugStringConvertible", "localPortTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "locationInView"]
 - ["Ps28CustomDebugStringConvertible", "locationManager"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidResumeLocationUpdates"]
@@ -339,6 +379,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartLocatingUser"]
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartRenderingMap"]
 - ["Ps28CustomDebugStringConvertible", "messageTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumPressDuration"]
 - ["Ps28CustomDebugStringConvertible", "remotePortTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
@@ -360,6 +401,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldClear"]
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldReturn"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "udpSocket"]
 - ["Ps28CustomDebugStringConvertible", "udpSocketDidClose"]
@@ -372,17 +414,25 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IPAddress"]
 - !private ["Ps23CustomStringConvertible", "MKCoordinateRegionMake"]
 - !private ["Ps23CustomStringConvertible", "MKCoordinateSpanMake"]
+- ["Ps23CustomStringConvertible", "MKPointAnnotation"]
 - ["Ps23CustomStringConvertible", "Map_show"]
 - !private ["Ps23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UInt16"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "_socket"]
+- ["Ps23CustomStringConvertible", "action"]
+- !private ["Ps23CustomStringConvertible", "addAnnotation"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- ["Ps23CustomStringConvertible", "annotation"]
 - ["Ps23CustomStringConvertible", "answerTextView"]
 - !private ["Ps23CustomStringConvertible", "beginReceiving"]
 - !private ["Ps23CustomStringConvertible", "bindToPort"]
 - !private ["Ps23CustomStringConvertible", "close"]
+- !private ["Ps23CustomStringConvertible", "convertPoint"]
+- !private ["Ps23CustomStringConvertible", "coordinate"]
 - !private ["Ps23CustomStringConvertible", "dataUsingEncoding"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
@@ -400,6 +450,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "localIP"]
 - ["Ps23CustomStringConvertible", "localPortTextField"]
 - !private ["Ps23CustomStringConvertible", "localizedDescription"]
+- !private ["Ps23CustomStringConvertible", "locationInView"]
 - ["Ps23CustomStringConvertible", "locationManager"]
 - ["Ps23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["Ps23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
@@ -416,6 +467,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "mapViewWillStartLocatingUser"]
 - ["Ps23CustomStringConvertible", "mapViewWillStartRenderingMap"]
 - ["Ps23CustomStringConvertible", "messageTextField"]
+- !private ["Ps23CustomStringConvertible", "minimumPressDuration"]
 - ["Ps23CustomStringConvertible", "remotePortTextField"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
@@ -437,6 +489,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "textFieldShouldClear"]
 - ["Ps23CustomStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps23CustomStringConvertible", "textFieldShouldReturn"]
+- !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "udpSocket"]
 - ["Ps23CustomStringConvertible", "udpSocketDidClose"]
@@ -450,17 +503,25 @@ depends-member:
 - !private ["Ps9Equatable", "IPAddress"]
 - !private ["Ps9Equatable", "MKCoordinateRegionMake"]
 - !private ["Ps9Equatable", "MKCoordinateSpanMake"]
+- ["Ps9Equatable", "MKPointAnnotation"]
 - ["Ps9Equatable", "Map_show"]
 - !private ["Ps9Equatable", "NSUTF8StringEncoding"]
 - !private ["Ps9Equatable", "NSUserDefaults"]
 - !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UILongPressGestureRecognizer"]
 - !private ["Ps9Equatable", "UInt16"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_socket"]
+- ["Ps9Equatable", "action"]
+- !private ["Ps9Equatable", "addAnnotation"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- ["Ps9Equatable", "annotation"]
 - ["Ps9Equatable", "answerTextView"]
 - !private ["Ps9Equatable", "beginReceiving"]
 - !private ["Ps9Equatable", "bindToPort"]
 - !private ["Ps9Equatable", "close"]
+- !private ["Ps9Equatable", "convertPoint"]
+- !private ["Ps9Equatable", "coordinate"]
 - !private ["Ps9Equatable", "dataUsingEncoding"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "desiredAccuracy"]
@@ -478,6 +539,7 @@ depends-member:
 - ["Ps9Equatable", "localIP"]
 - ["Ps9Equatable", "localPortTextField"]
 - !private ["Ps9Equatable", "localizedDescription"]
+- !private ["Ps9Equatable", "locationInView"]
 - ["Ps9Equatable", "locationManager"]
 - ["Ps9Equatable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps9Equatable", "locationManagerDidResumeLocationUpdates"]
@@ -494,6 +556,7 @@ depends-member:
 - ["Ps9Equatable", "mapViewWillStartLocatingUser"]
 - ["Ps9Equatable", "mapViewWillStartRenderingMap"]
 - ["Ps9Equatable", "messageTextField"]
+- !private ["Ps9Equatable", "minimumPressDuration"]
 - ["Ps9Equatable", "remotePortTextField"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
@@ -515,6 +578,7 @@ depends-member:
 - ["Ps9Equatable", "textFieldShouldClear"]
 - ["Ps9Equatable", "textFieldShouldEndEditing"]
 - ["Ps9Equatable", "textFieldShouldReturn"]
+- !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "udpSocket"]
 - ["Ps9Equatable", "udpSocketDidClose"]
@@ -538,12 +602,16 @@ depends-member:
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "IPAddress"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "MKCoordinateRegionMake"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "MKCoordinateSpanMake"]
+- ["PSo25GCDAsyncUdpSocketDelegate", "MKPointAnnotation"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "Map_show"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "NSUserDefaults"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "String"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "UInt16"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "_socket"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "action"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "annotation"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "answerTextView"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "hostTextField"]
@@ -590,17 +658,25 @@ depends-member:
 - !private ["Ps8Hashable", "IPAddress"]
 - !private ["Ps8Hashable", "MKCoordinateRegionMake"]
 - !private ["Ps8Hashable", "MKCoordinateSpanMake"]
+- ["Ps8Hashable", "MKPointAnnotation"]
 - ["Ps8Hashable", "Map_show"]
 - !private ["Ps8Hashable", "NSUTF8StringEncoding"]
 - !private ["Ps8Hashable", "NSUserDefaults"]
 - !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "UILongPressGestureRecognizer"]
 - !private ["Ps8Hashable", "UInt16"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_socket"]
+- ["Ps8Hashable", "action"]
+- !private ["Ps8Hashable", "addAnnotation"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- ["Ps8Hashable", "annotation"]
 - ["Ps8Hashable", "answerTextView"]
 - !private ["Ps8Hashable", "beginReceiving"]
 - !private ["Ps8Hashable", "bindToPort"]
 - !private ["Ps8Hashable", "close"]
+- !private ["Ps8Hashable", "convertPoint"]
+- !private ["Ps8Hashable", "coordinate"]
 - !private ["Ps8Hashable", "dataUsingEncoding"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "desiredAccuracy"]
@@ -618,6 +694,7 @@ depends-member:
 - ["Ps8Hashable", "localIP"]
 - ["Ps8Hashable", "localPortTextField"]
 - !private ["Ps8Hashable", "localizedDescription"]
+- !private ["Ps8Hashable", "locationInView"]
 - ["Ps8Hashable", "locationManager"]
 - ["Ps8Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["Ps8Hashable", "locationManagerDidResumeLocationUpdates"]
@@ -634,6 +711,7 @@ depends-member:
 - ["Ps8Hashable", "mapViewWillStartLocatingUser"]
 - ["Ps8Hashable", "mapViewWillStartRenderingMap"]
 - ["Ps8Hashable", "messageTextField"]
+- !private ["Ps8Hashable", "minimumPressDuration"]
 - ["Ps8Hashable", "remotePortTextField"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
@@ -655,6 +733,7 @@ depends-member:
 - ["Ps8Hashable", "textFieldShouldClear"]
 - ["Ps8Hashable", "textFieldShouldEndEditing"]
 - ["Ps8Hashable", "textFieldShouldReturn"]
+- !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "udpSocket"]
 - ["Ps8Hashable", "udpSocketDidClose"]
@@ -671,6 +750,12 @@ depends-member:
 - !private ["Ps21IntegerArithmeticType", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "init"]
+- !private ["PSo12MKAnnotation", "coordinate"]
+- ["PSo12MKAnnotation", "init"]
+- !private ["PSo12MKAnnotation", "title"]
+- !private ["CSo9MKMapView", "addAnnotation"]
+- !private ["CSo9MKMapView", "addGestureRecognizer"]
+- !private ["CSo9MKMapView", "convertPoint"]
 - !private ["CSo9MKMapView", "setRegion"]
 - !private ["PSo17MKMapViewDelegate", "CLLocationCoordinate2DMake"]
 - ["PSo17MKMapViewDelegate", "CLLocationManager"]
@@ -678,12 +763,16 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "IPAddress"]
 - !private ["PSo17MKMapViewDelegate", "MKCoordinateRegionMake"]
 - !private ["PSo17MKMapViewDelegate", "MKCoordinateSpanMake"]
+- ["PSo17MKMapViewDelegate", "MKPointAnnotation"]
 - !private ["PSo17MKMapViewDelegate", "Map_show"]
 - !private ["PSo17MKMapViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo17MKMapViewDelegate", "NSUserDefaults"]
 - !private ["PSo17MKMapViewDelegate", "String"]
+- !private ["PSo17MKMapViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo17MKMapViewDelegate", "UInt16"]
 - !private ["PSo17MKMapViewDelegate", "_socket"]
+- !private ["PSo17MKMapViewDelegate", "action"]
+- !private ["PSo17MKMapViewDelegate", "annotation"]
 - !private ["PSo17MKMapViewDelegate", "answerTextView"]
 - !private ["PSo17MKMapViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo17MKMapViewDelegate", "hostTextField"]
@@ -724,6 +813,12 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "udpSocketDidClose"]
 - !private ["PSo17MKMapViewDelegate", "view"]
 - ["PSo17MKMapViewDelegate", ""]
+- !private ["CSo17MKPointAnnotation", "coordinate"]
+- ["CSo17MKPointAnnotation", "init"]
+- !private ["CSo17MKPointAnnotation", "title"]
+- !private ["CSo7MKShape", "coordinate"]
+- ["CSo7MKShape", "init"]
+- !private ["CSo7MKShape", "title"]
 - !private ["Ps14MirrorPathType", "dataUsingEncoding"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "isEmpty"]
@@ -733,13 +828,20 @@ depends-member:
 - !private ["PSo8NSCoding", "IPAddress"]
 - !private ["PSo8NSCoding", "MKCoordinateRegionMake"]
 - !private ["PSo8NSCoding", "MKCoordinateSpanMake"]
+- ["PSo8NSCoding", "MKPointAnnotation"]
 - ["PSo8NSCoding", "Map_show"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UILongPressGestureRecognizer"]
 - !private ["PSo8NSCoding", "UInt16"]
 - ["PSo8NSCoding", "_socket"]
+- ["PSo8NSCoding", "action"]
+- !private ["PSo8NSCoding", "addAnnotation"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- ["PSo8NSCoding", "annotation"]
 - ["PSo8NSCoding", "answerTextView"]
+- !private ["PSo8NSCoding", "convertPoint"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
@@ -801,12 +903,16 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "IPAddress"]
 - !private ["PSo26NSExtensionRequestHandling", "MKCoordinateRegionMake"]
 - !private ["PSo26NSExtensionRequestHandling", "MKCoordinateSpanMake"]
+- ["PSo26NSExtensionRequestHandling", "MKPointAnnotation"]
 - ["PSo26NSExtensionRequestHandling", "Map_show"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UILongPressGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "UInt16"]
 - ["PSo26NSExtensionRequestHandling", "_socket"]
+- ["PSo26NSExtensionRequestHandling", "action"]
+- ["PSo26NSExtensionRequestHandling", "annotation"]
 - ["PSo26NSExtensionRequestHandling", "answerTextView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -867,6 +973,7 @@ depends-member:
 - !private ["CSo8NSObject", "MKCoordinateSpan"]
 - !private ["CSo8NSObject", "MKCoordinateSpanMake"]
 - ["CSo8NSObject", "MKMapView"]
+- ["CSo8NSObject", "MKPointAnnotation"]
 - ["CSo8NSObject", "Map_show"]
 - ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
@@ -875,16 +982,24 @@ depends-member:
 - ["CSo8NSObject", "Set"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIEvent"]
+- ["CSo8NSObject", "UIGestureRecognizer"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UILongPressGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UITextView"]
 - ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "UInt16"]
 - ["CSo8NSObject", "_socket"]
+- ["CSo8NSObject", "action"]
+- !private ["CSo8NSObject", "addAnnotation"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- ["CSo8NSObject", "annotation"]
 - ["CSo8NSObject", "answerTextView"]
 - !private ["CSo8NSObject", "beginReceiving"]
 - !private ["CSo8NSObject", "bindToPort"]
 - !private ["CSo8NSObject", "close"]
+- !private ["CSo8NSObject", "convertPoint"]
+- !private ["CSo8NSObject", "coordinate"]
 - !private ["CSo8NSObject", "dataUsingEncoding"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "desiredAccuracy"]
@@ -902,6 +1017,7 @@ depends-member:
 - ["CSo8NSObject", "localIP"]
 - ["CSo8NSObject", "localPortTextField"]
 - !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "locationInView"]
 - ["CSo8NSObject", "locationManager"]
 - ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
 - ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
@@ -918,6 +1034,7 @@ depends-member:
 - ["CSo8NSObject", "mapViewWillStartLocatingUser"]
 - ["CSo8NSObject", "mapViewWillStartRenderingMap"]
 - ["CSo8NSObject", "messageTextField"]
+- !private ["CSo8NSObject", "minimumPressDuration"]
 - ["CSo8NSObject", "remotePortTextField"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
@@ -939,6 +1056,7 @@ depends-member:
 - ["CSo8NSObject", "textFieldShouldClear"]
 - ["CSo8NSObject", "textFieldShouldEndEditing"]
 - ["CSo8NSObject", "textFieldShouldReturn"]
+- !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "udpSocket"]
 - ["CSo8NSObject", "udpSocketDidClose"]
@@ -950,16 +1068,24 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "IPAddress"]
 - !private ["PSo16NSObjectProtocol", "MKCoordinateRegionMake"]
 - !private ["PSo16NSObjectProtocol", "MKCoordinateSpanMake"]
+- ["PSo16NSObjectProtocol", "MKPointAnnotation"]
 - ["PSo16NSObjectProtocol", "Map_show"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "UInt16"]
 - ["PSo16NSObjectProtocol", "_socket"]
+- ["PSo16NSObjectProtocol", "action"]
+- !private ["PSo16NSObjectProtocol", "addAnnotation"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- ["PSo16NSObjectProtocol", "annotation"]
 - ["PSo16NSObjectProtocol", "answerTextView"]
 - !private ["PSo16NSObjectProtocol", "beginReceiving"]
 - !private ["PSo16NSObjectProtocol", "bindToPort"]
 - !private ["PSo16NSObjectProtocol", "close"]
+- !private ["PSo16NSObjectProtocol", "convertPoint"]
+- !private ["PSo16NSObjectProtocol", "coordinate"]
 - !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
@@ -977,6 +1103,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "localIP"]
 - ["PSo16NSObjectProtocol", "localPortTextField"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "locationInView"]
 - ["PSo16NSObjectProtocol", "locationManager"]
 - ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
@@ -993,6 +1120,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "mapViewWillStartLocatingUser"]
 - ["PSo16NSObjectProtocol", "mapViewWillStartRenderingMap"]
 - ["PSo16NSObjectProtocol", "messageTextField"]
+- !private ["PSo16NSObjectProtocol", "minimumPressDuration"]
 - ["PSo16NSObjectProtocol", "remotePortTextField"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
@@ -1014,6 +1142,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textFieldShouldClear"]
 - ["PSo16NSObjectProtocol", "textFieldShouldEndEditing"]
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
+- !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "udpSocket"]
 - ["PSo16NSObjectProtocol", "udpSocketDidClose"]
@@ -1038,6 +1167,7 @@ depends-member:
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "isEmpty"]
 - !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps10Streamable", "dataUsingEncoding"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Streamable", "isEmpty"]
@@ -1052,10 +1182,16 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "isEmpty"]
+- !private ["PSo29UIAccessibilityIdentification", "addAnnotation"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "convertPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setRegion"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "addAnnotation"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "convertPoint"]
 - !private ["PSo12UIAppearance", "endEditing"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setRegion"]
@@ -1066,13 +1202,20 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "IPAddress"]
 - !private ["PSo21UIAppearanceContainer", "MKCoordinateRegionMake"]
 - !private ["PSo21UIAppearanceContainer", "MKCoordinateSpanMake"]
+- ["PSo21UIAppearanceContainer", "MKPointAnnotation"]
 - ["PSo21UIAppearanceContainer", "Map_show"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "UInt16"]
 - ["PSo21UIAppearanceContainer", "_socket"]
+- ["PSo21UIAppearanceContainer", "action"]
+- !private ["PSo21UIAppearanceContainer", "addAnnotation"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "annotation"]
 - ["PSo21UIAppearanceContainer", "answerTextView"]
+- !private ["PSo21UIAppearanceContainer", "convertPoint"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
@@ -1126,12 +1269,16 @@ depends-member:
 - !private ["PSo18UIContentContainer", "IPAddress"]
 - !private ["PSo18UIContentContainer", "MKCoordinateRegionMake"]
 - !private ["PSo18UIContentContainer", "MKCoordinateSpanMake"]
+- ["PSo18UIContentContainer", "MKPointAnnotation"]
 - ["PSo18UIContentContainer", "Map_show"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "UInt16"]
 - ["PSo18UIContentContainer", "_socket"]
+- ["PSo18UIContentContainer", "action"]
+- ["PSo18UIContentContainer", "annotation"]
 - ["PSo18UIContentContainer", "answerTextView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -1178,10 +1325,16 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "addAnnotation"]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "convertPoint"]
 - !private ["PSo17UICoordinateSpace", "endEditing"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setRegion"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addAnnotation"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "convertPoint"]
 - !private ["PSo13UIDynamicItem", "endEditing"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setRegion"]
@@ -1192,13 +1345,20 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "IPAddress"]
 - !private ["PSo18UIFocusEnvironment", "MKCoordinateRegionMake"]
 - !private ["PSo18UIFocusEnvironment", "MKCoordinateSpanMake"]
+- ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
 - ["PSo18UIFocusEnvironment", "Map_show"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "UInt16"]
 - ["PSo18UIFocusEnvironment", "_socket"]
+- ["PSo18UIFocusEnvironment", "action"]
+- !private ["PSo18UIFocusEnvironment", "addAnnotation"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "annotation"]
 - ["PSo18UIFocusEnvironment", "answerTextView"]
+- !private ["PSo18UIFocusEnvironment", "convertPoint"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
@@ -1246,9 +1406,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo19UIGestureRecognizer", "locationInView"]
+- !private ["CSo19UIGestureRecognizer", "minimumPressDuration"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo28UILongPressGestureRecognizer", "init"]
+- !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2D"]
@@ -1262,6 +1427,7 @@ depends-member:
 - !private ["CSo11UIResponder", "MKCoordinateSpan"]
 - !private ["CSo11UIResponder", "MKCoordinateSpanMake"]
 - ["CSo11UIResponder", "MKMapView"]
+- ["CSo11UIResponder", "MKPointAnnotation"]
 - ["CSo11UIResponder", "Map_show"]
 - ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -1270,13 +1436,20 @@ depends-member:
 - ["CSo11UIResponder", "Set"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIEvent"]
+- ["CSo11UIResponder", "UIGestureRecognizer"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UILongPressGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UITextView"]
 - ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "UInt16"]
 - ["CSo11UIResponder", "_socket"]
+- ["CSo11UIResponder", "action"]
+- !private ["CSo11UIResponder", "addAnnotation"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- ["CSo11UIResponder", "annotation"]
 - ["CSo11UIResponder", "answerTextView"]
+- !private ["CSo11UIResponder", "convertPoint"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - !private ["CSo11UIResponder", "endEditing"]
@@ -1330,12 +1503,16 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "IPAddress"]
 - !private ["PSo16UIStateRestoring", "MKCoordinateRegionMake"]
 - !private ["PSo16UIStateRestoring", "MKCoordinateSpanMake"]
+- ["PSo16UIStateRestoring", "MKPointAnnotation"]
 - ["PSo16UIStateRestoring", "Map_show"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UILongPressGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "UInt16"]
 - ["PSo16UIStateRestoring", "_socket"]
+- ["PSo16UIStateRestoring", "action"]
+- ["PSo16UIStateRestoring", "annotation"]
 - ["PSo16UIStateRestoring", "answerTextView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1388,12 +1565,16 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "IPAddress"]
 - !private ["PSo19UITextFieldDelegate", "MKCoordinateRegionMake"]
 - !private ["PSo19UITextFieldDelegate", "MKCoordinateSpanMake"]
+- ["PSo19UITextFieldDelegate", "MKPointAnnotation"]
 - !private ["PSo19UITextFieldDelegate", "Map_show"]
 - !private ["PSo19UITextFieldDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITextFieldDelegate", "NSUserDefaults"]
 - !private ["PSo19UITextFieldDelegate", "String"]
+- !private ["PSo19UITextFieldDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo19UITextFieldDelegate", "UInt16"]
 - !private ["PSo19UITextFieldDelegate", "_socket"]
+- !private ["PSo19UITextFieldDelegate", "action"]
+- !private ["PSo19UITextFieldDelegate", "annotation"]
 - !private ["PSo19UITextFieldDelegate", "answerTextView"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITextFieldDelegate", "hostTextField"]
@@ -1445,13 +1626,20 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "IPAddress"]
 - !private ["PSo18UITraitEnvironment", "MKCoordinateRegionMake"]
 - !private ["PSo18UITraitEnvironment", "MKCoordinateSpanMake"]
+- ["PSo18UITraitEnvironment", "MKPointAnnotation"]
 - ["PSo18UITraitEnvironment", "Map_show"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "UInt16"]
 - ["PSo18UITraitEnvironment", "_socket"]
+- ["PSo18UITraitEnvironment", "action"]
+- !private ["PSo18UITraitEnvironment", "addAnnotation"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- ["PSo18UITraitEnvironment", "annotation"]
 - ["PSo18UITraitEnvironment", "answerTextView"]
+- !private ["PSo18UITraitEnvironment", "convertPoint"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
@@ -1499,6 +1687,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addAnnotation"]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "convertPoint"]
 - !private ["CSo6UIView", "endEditing"]
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "setRegion"]
@@ -1516,6 +1707,7 @@ depends-member:
 - !private ["CSo16UIViewController", "MKCoordinateSpan"]
 - !private ["CSo16UIViewController", "MKCoordinateSpanMake"]
 - ["CSo16UIViewController", "MKMapView"]
+- ["CSo16UIViewController", "MKPointAnnotation"]
 - ["CSo16UIViewController", "Map_show"]
 - ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSError"]
@@ -1524,12 +1716,16 @@ depends-member:
 - ["CSo16UIViewController", "Set"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIEvent"]
+- ["CSo16UIViewController", "UIGestureRecognizer"]
 - ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UILongPressGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UITextView"]
 - ["CSo16UIViewController", "UITouch"]
 - !private ["CSo16UIViewController", "UInt16"]
 - ["CSo16UIViewController", "_socket"]
+- ["CSo16UIViewController", "action"]
+- ["CSo16UIViewController", "annotation"]
 - ["CSo16UIViewController", "answerTextView"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
@@ -1598,6 +1794,7 @@ depends-member:
 - !private ["C6GPSCar14ViewController", "MKCoordinateSpan"]
 - !private ["C6GPSCar14ViewController", "MKCoordinateSpanMake"]
 - ["C6GPSCar14ViewController", "MKMapView"]
+- ["C6GPSCar14ViewController", "MKPointAnnotation"]
 - ["C6GPSCar14ViewController", "Map_show"]
 - ["C6GPSCar14ViewController", "NSData"]
 - !private ["C6GPSCar14ViewController", "NSError"]
@@ -1606,12 +1803,16 @@ depends-member:
 - ["C6GPSCar14ViewController", "Set"]
 - !private ["C6GPSCar14ViewController", "String"]
 - ["C6GPSCar14ViewController", "UIEvent"]
+- ["C6GPSCar14ViewController", "UIGestureRecognizer"]
 - ["C6GPSCar14ViewController", "UILabel"]
+- !private ["C6GPSCar14ViewController", "UILongPressGestureRecognizer"]
 - ["C6GPSCar14ViewController", "UITextField"]
 - ["C6GPSCar14ViewController", "UITextView"]
 - ["C6GPSCar14ViewController", "UITouch"]
 - !private ["C6GPSCar14ViewController", "UInt16"]
 - ["C6GPSCar14ViewController", "_socket"]
+- ["C6GPSCar14ViewController", "action"]
+- ["C6GPSCar14ViewController", "annotation"]
 - ["C6GPSCar14ViewController", "answerTextView"]
 - ["C6GPSCar14ViewController", "deinit"]
 - ["C6GPSCar14ViewController", "didReceiveMemoryWarning"]
@@ -1682,6 +1883,9 @@ depends-member:
 - !private ["Ps22_RandomAccessAmbiguity", "init"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addAnnotation"]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+- !private ["Ps12_Reflectable", "convertPoint"]
 - !private ["Ps12_Reflectable", "dataUsingEncoding"]
 - !private ["Ps12_Reflectable", "endEditing"]
 - !private ["Ps12_Reflectable", "init"]
@@ -1722,8 +1926,11 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- "PSo12MKAnnotation"
 - !private "CSo9MKMapView"
 - "PSo17MKMapViewDelegate"
+- "CSo17MKPointAnnotation"
+- "CSo7MKShape"
 - !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1739,6 +1946,7 @@ depends-nominal:
 - "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
+- !private "V10ObjectiveC8Selector"
 - !private "Ps10Streamable"
 - !private "Ps10Strideable"
 - !private "SS"
@@ -1752,8 +1960,10 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo19UIGestureRecognizer"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
+- !private "CSo28UILongPressGestureRecognizer"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo16UIStateRestoring"
@@ -1809,4 +2019,4 @@ depends-external:
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "28d05443b7e52987438b23c624e95f41"
+interface-hash: "f207f76e608e75a0edbb88790c762925"

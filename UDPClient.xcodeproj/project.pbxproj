@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		708D2A751CD026370036E340 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708D2A741CD026370036E340 /* CoreLocation.framework */; };
 		70BCEAE91CC304A400AE33D1 /* ysocket in Resources */ = {isa = PBXBuildFile; fileRef = 70BCEAE81CC304A400AE33D1 /* ysocket */; };
 		70BCEAF21CC305A300AE33D1 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCEAEE1CC305A300AE33D1 /* Socket.swift */; };
 		70BCEAF31CC305A300AE33D1 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCEAEF1CC305A300AE33D1 /* TCPClient.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		708D2A741CD026370036E340 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		70BCEAE81CC304A400AE33D1 /* ysocket */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ysocket; path = "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket"; sourceTree = "<absolute>"; };
 		70BCEAEE1CC305A300AE33D1 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = UDPClient/ysocket/Socket.swift; sourceTree = "<group>"; };
 		70BCEAEF1CC305A300AE33D1 /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = UDPClient/ysocket/TCPClient.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D2A751CD026370036E340 /* CoreLocation.framework in Frameworks */,
 				70E8C81A1CC2A67E002136B4 /* CocoaAsyncSocket.framework in Frameworks */,
 				F6589E431C74500600AB029C /* CocoaAsyncSocket.framework in Frameworks */,
 			);
@@ -89,6 +92,7 @@
 		F6589E231C744EC600AB029C = {
 			isa = PBXGroup;
 			children = (
+				708D2A741CD026370036E340 /* CoreLocation.framework */,
 				F6589E421C74500600AB029C /* CocoaAsyncSocket.framework */,
 				F6589E2E1C744EC600AB029C /* UDPClient */,
 				F6589E2D1C744EC600AB029C /* Products */,

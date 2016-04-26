@@ -30,7 +30,14 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     var latDelta:CLLocationDegrees = 0.01 //zoom
     var lonDelta:CLLocationDegrees = 0.01
     
+    var annotation = MKPointAnnotation()
     
+
+    
+    
+    
+    
+
     
     
     
@@ -91,14 +98,48 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         Map_show.setRegion(region, animated: true)
+        
+        annotation.coordinate = location
+        
+        annotation.title = "Car Location"
+        
+        Map_show.addAnnotation(annotation)
+        
+        /*    long press action      */
+        
+        let uilpgr = UILongPressGestureRecognizer(target:self,action:"action:")
+        
+        uilpgr.minimumPressDuration = 1.5
+        
+        Map_show.addGestureRecognizer(uilpgr)
+        
         /******************************************/
         
         loadDefaults()
     }
     
+    
+    func action(gestureRecognizer: UIGestureRecognizer){
+        //print("Gesture Recognized")
+        let touchPoint = gestureRecognizer.locationInView(self.Map_show)
+        
+        let newCoordinate:CLLocationCoordinate2D = Map_show.convertPoint(touchPoint, toCoordinateFromView: self.Map_show)
+        
+        var annotation = MKPointAnnotation()
+        
+        annotation.coordinate = newCoordinate
+        
+        annotation.title = "Place to Move"
+        
+        Map_show.addAnnotation(annotation)
+        
+    }
+    
+    
     deinit {
         socket = nil
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
