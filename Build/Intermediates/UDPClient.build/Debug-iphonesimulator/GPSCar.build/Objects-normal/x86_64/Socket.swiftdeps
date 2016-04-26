@@ -13,28 +13,28 @@ provides-member:
 - ["C6GPSCar6Socket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UnsafePointer"
-- "UInt8"
-- "String"
-- "Int32"
-- "Int"
-- "c_ytcpsocket_pull"
-- "Int8"
-- "c_ytcpsocket_connect"
-- "c_ytcpsocket_send"
-- "c_ytcpsocket_listen"
-- "Socket"
 - "c_ytcpsocket_accept"
+- "String"
+- "c_ytcpsocket_connect"
+- "Int8"
+- "c_ytcpsocket_listen"
+- "Int32"
+- "c_ytcpsocket_pull"
+- "c_ytcpsocket_send"
+- "Int"
+- "UInt8"
 - "c_ytcpsocket_close"
+- "Socket"
+- "UnsafePointer"
 depends-member:
-- !private ["PSs9AnyObject", "addr"]
-- !private ["PSs9AnyObject", "c_ytcpsocket_close"]
-- !private ["PSs9AnyObject", "close"]
-- !private ["PSs9AnyObject", "fd"]
-- !private ["PSs9AnyObject", "port"]
-- ["PSs9AnyObject", ""]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["Ps9AnyObject", "addr"]
+- !private ["Ps9AnyObject", "c_ytcpsocket_close"]
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "fd"]
+- !private ["Ps9AnyObject", "port"]
+- ["Ps9AnyObject", ""]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - ["C6GPSCar6Socket", "Int"]
 - ["C6GPSCar6Socket", "Int32"]
@@ -46,20 +46,20 @@ depends-member:
 - ["C6GPSCar6Socket", "fd"]
 - ["C6GPSCar6Socket", "init"]
 - ["C6GPSCar6Socket", "port"]
-- ["PSs12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "Some"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs28CustomDebugStringConvertible"
-- "PSs21NilLiteralConvertible"
+- "Ps9AnyObject"
+- "Ps28CustomDebugStringConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
 - "C6GPSCar6Socket"
-- "PSs12_Reflectable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/Network-swift.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/UDPClient/ysocket/IPAddress.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk/usr/include/ifaddrs.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/ifaddrs.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -73,4 +73,5 @@ depends-external:
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/AsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Modules/module.modulemap"
-interface-hash: "e18c82c8a74ecc5b57b2b702f8461416"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "24c06553f45fb27adda509e2dbfc0e01"

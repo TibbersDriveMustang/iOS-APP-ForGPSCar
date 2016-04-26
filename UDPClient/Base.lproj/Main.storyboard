@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="28" width="560" height="564"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter GPS Car IP" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9dO-HN-2q7">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="URL"/>
                                         <connections>
@@ -30,7 +30,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local Port" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e4M-GT-sfO">
-                                        <rect key="frame" x="0.0" y="9" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="36" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GPS Car Port" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qgi-8a-2Om">
-                                        <rect key="frame" x="0.0" y="48" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="75" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message To Send" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-7c-mRi">
-                                        <rect key="frame" x="0.0" y="87" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="114" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -54,18 +54,21 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-NP-ujx">
-                                        <rect key="frame" x="0.0" y="126" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="153" width="560" height="30"/>
                                         <state key="normal" title="Send UDP Packet"/>
                                         <connections>
                                             <action selector="sendPacket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hs-3G-Y2g"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-G1-oag">
-                                        <rect key="frame" x="0.0" y="165" width="560" height="369"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-G1-oag">
+                                        <rect key="frame" x="0.0" y="192" width="560" height="136"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZZx-kP-08b">
+                                        <rect key="frame" x="0.0" y="337" width="560" height="197"/>
+                                    </mapView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local IP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-vU-g0b">
                                         <rect key="frame" x="0.0" y="543" width="560" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -84,6 +87,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Map_show" destination="ZZx-kP-08b" id="X4g-tQ-O3Z"/>
                         <outlet property="answerTextView" destination="4fm-G1-oag" id="xoT-DC-ZTP"/>
                         <outlet property="hostTextField" destination="9dO-HN-2q7" id="k9y-jL-0xo"/>
                         <outlet property="localIP" destination="yfA-vU-g0b" id="aUz-a1-8at"/>

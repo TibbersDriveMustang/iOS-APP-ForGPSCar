@@ -8,15 +8,30 @@
 
 import UIKit
 import CocoaAsyncSocket
+import MapKit
+import CoreLocation
 
-
-class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var hostTextField: UITextField!
     @IBOutlet weak var localPortTextField: UITextField!
     @IBOutlet weak var remotePortTextField: UITextField!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var answerTextView: UITextView!
+    
+    /*            For Map             */
+    
+    @IBOutlet weak var Map_show: MKMapView!
+    var locationManager = CLLocationManager()
+    
+    
+    
+    
+    
+    /**********************************/
+    
+    
+    
     
     
     @IBOutlet weak var localIP: UILabel!
