@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6GPSCar11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
-- "applicationDidEnterBackground"
 - "application"
-- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
 - "window"
+- "applicationWillEnterForeground"
 - "applicationWillTerminate"
 depends-top-level:
-- "AnyObject"
-- "NSObject"
-- "AppDelegate"
 - "Bool"
-- "UIApplicationDelegate"
-- "UIResponder"
+- "UIWindow"
+- "AnyObject"
 - "UIApplication"
 - !private "BooleanLiteralType"
-- "UIWindow"
+- "UIApplicationDelegate"
+- "UIResponder"
+- "AppDelegate"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
