@@ -19,16 +19,24 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var answerTextView: UITextView!
     
-    /*            For Map             */
+    /*                      Map Variables                        */
     
     @IBOutlet weak var Map_show: MKMapView!
     var locationManager = CLLocationManager()
     
+    var latitude:CLLocationDegrees = 32.984865
+    var longitude:CLLocationDegrees = -96.748277
+    
+    var latDelta:CLLocationDegrees = 0.01 //zoom
+    var lonDelta:CLLocationDegrees = 0.01
     
     
     
     
-    /**********************************/
+    
+    
+    
+    /************************************************************/
     
     
     
@@ -71,6 +79,19 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         
         /******************************************/
         super.viewDidLoad()
+        
+        /*                For Map                 */
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        
+        Map_show.setRegion(region, animated: true)
+        /******************************************/
         
         loadDefaults()
     }

@@ -137,6 +137,10 @@ SWIFT_CLASS("_TtC6GPSCar14ViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified answerTextView;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified Map_show;
 @property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic) CLLocationDegrees latitude;
+@property (nonatomic) CLLocationDegrees longitude;
+@property (nonatomic) CLLocationDegrees latDelta;
+@property (nonatomic) CLLocationDegrees lonDelta;
 
 /// <hr/>
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified localIP;
