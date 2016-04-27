@@ -85,6 +85,8 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         self.localIP.text = ipUtil.getIPAddress(true)
         
         /******************************************/
+        //saveDefaults()
+        
         super.viewDidLoad()
         
         /*                For Map                 */
@@ -97,7 +99,7 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
-        Map_show.setRegion(region, animated: true)
+        Map_show.setRegion(region, animated: false)
         
         annotation.coordinate = location
         
@@ -116,6 +118,25 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         /******************************************/
         
         loadDefaults()
+    }
+    
+    func locationManager(manager:CLLocationManager!,didUpdateLocations locations:[CLLocation]){
+        //print(locations)
+        
+        var userLocation:CLLocation = locations[0]
+        
+        var latitude = userLocation.coordinate.latitude
+        
+        var longitude = userLocation.coordinate.longitude
+        
+        var latDelta:CLLocationDegrees = 0.01 //zoom
+        var lonDelta:CLLocationDegrees = 0.01
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        
+        self.Map_show.setRegion(region, animated: false)   //if true,map will automatic move when location updated
+        
     }
     
     
@@ -150,7 +171,21 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         answerTextView.text = text + "\n" + answerTextView.text
     }
 
+
+    
+    
     @IBAction func sendPacket(sender: AnyObject) {
+        //testing
+        //loadDefaults()
+        print("================")
+        print("local port:")
+        print(self.localPortTextField.text)
+        print("remote IP:")
+        print(self.hostTextField.text)
+        print("remote port:")
+        print(self.remotePortTextField.text)
+        print("----------------")
+        
         guard let str = messageTextField.text where !str.isEmpty else {
             log(">>> Cannot send packet: please enter data to send")
             return
@@ -179,6 +214,12 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
             return
         }
         log("Data received: \(stringData)")
+        /*                  Received Data Operate here                 */
+        //var latitude:Float =
+        //var longitude:Float =
+        
+        /***************************************************************/
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
