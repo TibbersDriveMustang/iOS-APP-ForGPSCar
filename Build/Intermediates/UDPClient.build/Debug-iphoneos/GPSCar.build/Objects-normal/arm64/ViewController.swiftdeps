@@ -6,80 +6,78 @@ provides-nominal:
 provides-member:
 - ["C6GPSCar14ViewController", ""]
 provides-dynamic-lookup:
-- "latDelta"
-- "localPortTextField"
-- "touchesBegan"
-- "locationManager"
-- "locationManager"
-- "udpSocket"
-- "answerTextView"
-- "latitude"
-- "sendPacket"
-- "localIP"
-- "action"
-- "remotePortTextField"
-- "textFieldShouldReturn"
-- "_socket"
-- "hostTextField"
-- "Map_show"
-- "socket"
-- "lonDelta"
-- "annotation"
 - "messageTextField"
-- "didReceiveMemoryWarning"
-- "longitude"
+- "_socket"
+- "sendPacket"
 - "viewDidLoad"
+- "udpSocket"
+- "Map_show"
+- "action"
+- "textFieldShouldReturn"
+- "localIP"
+- "hostTextField"
+- "remotePortTextField"
+- "answerTextView"
+- "didReceiveMemoryWarning"
+- "touchesBegan"
+- "localPortTextField"
+- "carAnnotation"
+- "socket"
 depends-top-level:
-- "CLLocationManager"
-- !private "MKCoordinateSpan"
-- !private "UILongPressGestureRecognizer"
-- !private "??"
 - !private "CLLocationCoordinate2D"
+- "GCDAsyncUdpSocket"
+- "ViewController"
+- "UIEvent"
+- "NSData"
+- !private "NSUTF8StringEncoding"
+- "UIGestureRecognizer"
+- "UILabel"
+- !private "=="
+- !private "ExtendedGraphemeClusterType"
 - !private "NSUserDefaults"
-- "Set"
-- "UITouch"
-- "UIViewController"
-- !private "MKCoordinateSpanMake"
+- !private "CLLocationManager"
+- !private "UILongPressGestureRecognizer"
+- !private "BooleanLiteralType"
+- "Bool"
 - !private "+"
-- !private "MKCoordinateRegion"
-- "GCDAsyncUdpSocketDelegate"
+- !private "dispatch_get_main_queue"
+- !private "IPAddress"
 - "MKPointAnnotation"
-- "UITextView"
-- "MKMapViewDelegate"
-- "UITextFieldDelegate"
+- !private "CLLocationCoordinate2DMake"
 - "AnyObject"
-- !private "!="
-- "CLLocationManagerDelegate"
+- !private "Float"
+- "MKMapView"
+- !private "StringLiteralType"
 - !private "NSError"
 - !private "MKCoordinateRegionMake"
 - !private "UInt16"
-- !private "!"
-- "NSData"
-- !private "BooleanLiteralType"
-- !private "IPAddress"
-- "CLLocationDegrees"
-- "UILabel"
-- !private "=="
-- "UIGestureRecognizer"
 - "UITextField"
-- !private "kCLLocationAccuracyBest"
 - !private ">"
-- !private "CLLocationCoordinate2DMake"
-- !private "StringLiteralType"
-- !private "dispatch_get_main_queue"
-- !private "String"
-- "MKMapView"
-- "Bool"
-- "GCDAsyncUdpSocket"
+- !private "kCLLocationAccuracyBest"
+- !private "CLLocationDegrees"
+- !private "MKCoordinateRegion"
+- !private "??"
 - !private "UnicodeScalarType"
-- "ViewController"
-- "CLLocation"
-- !private "NSUTF8StringEncoding"
 - !private "print"
-- "UIEvent"
+- !private "!="
+- !private "MKCoordinateSpan"
+- "UITextFieldDelegate"
+- "UITextView"
+- "MKMapViewDelegate"
+- "CLLocationManagerDelegate"
+- "UIViewController"
+- !private "!"
+- "GCDAsyncUdpSocketDelegate"
+- !private "MKCoordinateSpanMake"
+- "Set"
+- "UITouch"
+- !private "String"
 depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Vs12AnyGenerator", "Element"]
 - !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
-- ["Ps9AnyObject", "CLLocationManager"]
+- !private ["Ps9AnyObject", "CLLocationManager"]
+- !private ["Ps9AnyObject", "Float"]
 - !private ["Ps9AnyObject", "GCDAsyncUdpSocket"]
 - !private ["Ps9AnyObject", "IPAddress"]
 - !private ["Ps9AnyObject", "MKCoordinateRegionMake"]
@@ -95,10 +93,11 @@ depends-member:
 - ["Ps9AnyObject", "action"]
 - !private ["Ps9AnyObject", "addAnnotation"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
-- ["Ps9AnyObject", "annotation"]
 - ["Ps9AnyObject", "answerTextView"]
 - !private ["Ps9AnyObject", "beginReceiving"]
 - !private ["Ps9AnyObject", "bindToPort"]
+- ["Ps9AnyObject", "carAnnotation"]
+- !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "close"]
 - !private ["Ps9AnyObject", "convertPoint"]
 - !private ["Ps9AnyObject", "coordinate"]
@@ -113,8 +112,6 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isEmpty"]
 - !private ["Ps9AnyObject", "kCLLocationAccuracyBest"]
-- ["Ps9AnyObject", "latDelta"]
-- ["Ps9AnyObject", "latitude"]
 - ["Ps9AnyObject", "loadDefaults"]
 - ["Ps9AnyObject", "localIP"]
 - ["Ps9AnyObject", "localPortTextField"]
@@ -125,8 +122,6 @@ depends-member:
 - ["Ps9AnyObject", "locationManagerDidResumeLocationUpdates"]
 - ["Ps9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps9AnyObject", "log"]
-- ["Ps9AnyObject", "lonDelta"]
-- ["Ps9AnyObject", "longitude"]
 - ["Ps9AnyObject", "mapView"]
 - ["Ps9AnyObject", "mapViewDidFailLoadingMap"]
 - ["Ps9AnyObject", "mapViewDidFinishLoadingMap"]
@@ -166,27 +161,41 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Vs11AnySequence", "Generator"]
+- !private ["Vs11AnySequence", "deinit"]
+- !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "map"]
 - !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "map"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["CSo10CLLocation", "coordinate"]
-- !private ["VSC22CLLocationCoordinate2D", "latitude"]
-- !private ["VSC22CLLocationCoordinate2D", "longitude"]
 - !private ["CSo17CLLocationManager", "delegate"]
 - !private ["CSo17CLLocationManager", "desiredAccuracy"]
-- ["CSo17CLLocationManager", "init"]
+- !private ["CSo17CLLocationManager", "init"]
 - !private ["CSo17CLLocationManager", "requestWhenInUseAuthorization"]
 - !private ["CSo17CLLocationManager", "startUpdatingLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "CLLocationCoordinate2DMake"]
-- ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "Float"]
 - !private ["PSo25CLLocationManagerDelegate", "GCDAsyncUdpSocket"]
 - !private ["PSo25CLLocationManagerDelegate", "IPAddress"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCoordinateRegionMake"]
@@ -200,13 +209,11 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UInt16"]
 - !private ["PSo25CLLocationManagerDelegate", "_socket"]
 - !private ["PSo25CLLocationManagerDelegate", "action"]
-- !private ["PSo25CLLocationManagerDelegate", "annotation"]
 - !private ["PSo25CLLocationManagerDelegate", "answerTextView"]
+- !private ["PSo25CLLocationManagerDelegate", "carAnnotation"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25CLLocationManagerDelegate", "hostTextField"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
-- !private ["PSo25CLLocationManagerDelegate", "latDelta"]
-- !private ["PSo25CLLocationManagerDelegate", "latitude"]
 - !private ["PSo25CLLocationManagerDelegate", "loadDefaults"]
 - !private ["PSo25CLLocationManagerDelegate", "localIP"]
 - !private ["PSo25CLLocationManagerDelegate", "localPortTextField"]
@@ -215,8 +222,6 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25CLLocationManagerDelegate", "log"]
-- !private ["PSo25CLLocationManagerDelegate", "lonDelta"]
-- !private ["PSo25CLLocationManagerDelegate", "longitude"]
 - ["PSo25CLLocationManagerDelegate", "mapView"]
 - ["PSo25CLLocationManagerDelegate", "mapViewDidFailLoadingMap"]
 - ["PSo25CLLocationManagerDelegate", "mapViewDidFinishLoadingMap"]
@@ -243,9 +248,12 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "view"]
 - ["PSo25CLLocationManagerDelegate", ""]
 - !private ["Ps11CVarArgType", "CLLocationCoordinate2DMake"]
-- ["Ps11CVarArgType", "CLLocationManager"]
+- !private ["Ps11CVarArgType", "CLLocationManager"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "Float"]
 - !private ["Ps11CVarArgType", "GCDAsyncUdpSocket"]
 - !private ["Ps11CVarArgType", "IPAddress"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "MKCoordinateRegionMake"]
 - !private ["Ps11CVarArgType", "MKCoordinateSpanMake"]
 - ["Ps11CVarArgType", "MKPointAnnotation"]
@@ -259,10 +267,11 @@ depends-member:
 - ["Ps11CVarArgType", "action"]
 - !private ["Ps11CVarArgType", "addAnnotation"]
 - !private ["Ps11CVarArgType", "addGestureRecognizer"]
-- ["Ps11CVarArgType", "annotation"]
 - ["Ps11CVarArgType", "answerTextView"]
 - !private ["Ps11CVarArgType", "beginReceiving"]
 - !private ["Ps11CVarArgType", "bindToPort"]
+- ["Ps11CVarArgType", "carAnnotation"]
+- !private ["Ps11CVarArgType", "characters"]
 - !private ["Ps11CVarArgType", "close"]
 - !private ["Ps11CVarArgType", "convertPoint"]
 - !private ["Ps11CVarArgType", "coordinate"]
@@ -277,8 +286,6 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "isEmpty"]
 - !private ["Ps11CVarArgType", "kCLLocationAccuracyBest"]
-- ["Ps11CVarArgType", "latDelta"]
-- ["Ps11CVarArgType", "latitude"]
 - ["Ps11CVarArgType", "loadDefaults"]
 - ["Ps11CVarArgType", "localIP"]
 - ["Ps11CVarArgType", "localPortTextField"]
@@ -289,8 +296,6 @@ depends-member:
 - ["Ps11CVarArgType", "locationManagerDidResumeLocationUpdates"]
 - ["Ps11CVarArgType", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps11CVarArgType", "log"]
-- ["Ps11CVarArgType", "lonDelta"]
-- ["Ps11CVarArgType", "longitude"]
 - ["Ps11CVarArgType", "mapView"]
 - ["Ps11CVarArgType", "mapViewDidFailLoadingMap"]
 - ["Ps11CVarArgType", "mapViewDidFinishLoadingMap"]
@@ -331,17 +336,30 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["VSS13CharacterView", "Generator"]
+- !private ["VSS13CharacterView", "Index"]
+- !private ["VSS13CharacterView", "SubSequence"]
+- !private ["VSS13CharacterView", "_Element"]
+- !private ["VSS13CharacterView", "deinit"]
+- !private ["VSS13CharacterView", "split"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "map"]
+- !private ["Ps14CollectionType", "split"]
 - !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "characters"]
 - !private ["Ps10Comparable", "dataUsingEncoding"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "isEmpty"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2DMake"]
-- ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
+- !private ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
+- !private ["Ps28CustomDebugStringConvertible", "Float"]
 - !private ["Ps28CustomDebugStringConvertible", "GCDAsyncUdpSocket"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "IPAddress"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "MKCoordinateRegionMake"]
@@ -352,16 +370,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UInt16"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "_socket"]
 - ["Ps28CustomDebugStringConvertible", "action"]
 - !private ["Ps28CustomDebugStringConvertible", "addAnnotation"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
-- ["Ps28CustomDebugStringConvertible", "annotation"]
 - ["Ps28CustomDebugStringConvertible", "answerTextView"]
 - !private ["Ps28CustomDebugStringConvertible", "beginReceiving"]
 - !private ["Ps28CustomDebugStringConvertible", "bindToPort"]
+- ["Ps28CustomDebugStringConvertible", "carAnnotation"]
+- !private ["Ps28CustomDebugStringConvertible", "characters"]
 - !private ["Ps28CustomDebugStringConvertible", "close"]
 - !private ["Ps28CustomDebugStringConvertible", "convertPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
@@ -376,8 +397,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
 - !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyBest"]
-- ["Ps28CustomDebugStringConvertible", "latDelta"]
-- ["Ps28CustomDebugStringConvertible", "latitude"]
 - ["Ps28CustomDebugStringConvertible", "loadDefaults"]
 - ["Ps28CustomDebugStringConvertible", "localIP"]
 - ["Ps28CustomDebugStringConvertible", "localPortTextField"]
@@ -388,8 +407,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "locationManagerDidResumeLocationUpdates"]
 - ["Ps28CustomDebugStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps28CustomDebugStringConvertible", "log"]
-- ["Ps28CustomDebugStringConvertible", "lonDelta"]
-- ["Ps28CustomDebugStringConvertible", "longitude"]
+- !private ["Ps28CustomDebugStringConvertible", "map"]
 - ["Ps28CustomDebugStringConvertible", "mapView"]
 - ["Ps28CustomDebugStringConvertible", "mapViewDidFailLoadingMap"]
 - ["Ps28CustomDebugStringConvertible", "mapViewDidFinishLoadingMap"]
@@ -431,10 +449,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CLLocationCoordinate2DMake"]
-- ["Ps23CustomStringConvertible", "CLLocationManager"]
+- !private ["Ps23CustomStringConvertible", "CLLocationManager"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Float"]
 - !private ["Ps23CustomStringConvertible", "GCDAsyncUdpSocket"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "IPAddress"]
 - !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "MKCoordinateRegionMake"]
 - !private ["Ps23CustomStringConvertible", "MKCoordinateSpanMake"]
 - ["Ps23CustomStringConvertible", "MKPointAnnotation"]
@@ -442,17 +464,20 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UInt16"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "_socket"]
 - ["Ps23CustomStringConvertible", "action"]
 - !private ["Ps23CustomStringConvertible", "addAnnotation"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
-- ["Ps23CustomStringConvertible", "annotation"]
 - ["Ps23CustomStringConvertible", "answerTextView"]
 - !private ["Ps23CustomStringConvertible", "beginReceiving"]
 - !private ["Ps23CustomStringConvertible", "bindToPort"]
+- ["Ps23CustomStringConvertible", "carAnnotation"]
+- !private ["Ps23CustomStringConvertible", "characters"]
 - !private ["Ps23CustomStringConvertible", "close"]
 - !private ["Ps23CustomStringConvertible", "convertPoint"]
 - !private ["Ps23CustomStringConvertible", "coordinate"]
@@ -467,8 +492,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
 - !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyBest"]
-- ["Ps23CustomStringConvertible", "latDelta"]
-- ["Ps23CustomStringConvertible", "latitude"]
 - ["Ps23CustomStringConvertible", "loadDefaults"]
 - ["Ps23CustomStringConvertible", "localIP"]
 - ["Ps23CustomStringConvertible", "localPortTextField"]
@@ -479,8 +502,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
 - ["Ps23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps23CustomStringConvertible", "log"]
-- ["Ps23CustomStringConvertible", "lonDelta"]
-- ["Ps23CustomStringConvertible", "longitude"]
+- !private ["Ps23CustomStringConvertible", "map"]
 - ["Ps23CustomStringConvertible", "mapView"]
 - ["Ps23CustomStringConvertible", "mapViewDidFailLoadingMap"]
 - ["Ps23CustomStringConvertible", "mapViewDidFinishLoadingMap"]
@@ -523,9 +545,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CLLocationCoordinate2DMake"]
-- ["Ps9Equatable", "CLLocationManager"]
+- !private ["Ps9Equatable", "CLLocationManager"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "GCDAsyncUdpSocket"]
 - !private ["Ps9Equatable", "IPAddress"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "MKCoordinateRegionMake"]
 - !private ["Ps9Equatable", "MKCoordinateSpanMake"]
 - ["Ps9Equatable", "MKPointAnnotation"]
@@ -540,10 +565,11 @@ depends-member:
 - ["Ps9Equatable", "action"]
 - !private ["Ps9Equatable", "addAnnotation"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
-- ["Ps9Equatable", "annotation"]
 - ["Ps9Equatable", "answerTextView"]
 - !private ["Ps9Equatable", "beginReceiving"]
 - !private ["Ps9Equatable", "bindToPort"]
+- ["Ps9Equatable", "carAnnotation"]
+- !private ["Ps9Equatable", "characters"]
 - !private ["Ps9Equatable", "close"]
 - !private ["Ps9Equatable", "convertPoint"]
 - !private ["Ps9Equatable", "coordinate"]
@@ -558,8 +584,6 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isEmpty"]
 - !private ["Ps9Equatable", "kCLLocationAccuracyBest"]
-- ["Ps9Equatable", "latDelta"]
-- ["Ps9Equatable", "latitude"]
 - ["Ps9Equatable", "loadDefaults"]
 - ["Ps9Equatable", "localIP"]
 - ["Ps9Equatable", "localPortTextField"]
@@ -570,8 +594,6 @@ depends-member:
 - ["Ps9Equatable", "locationManagerDidResumeLocationUpdates"]
 - ["Ps9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps9Equatable", "log"]
-- ["Ps9Equatable", "lonDelta"]
-- ["Ps9Equatable", "longitude"]
 - ["Ps9Equatable", "mapView"]
 - ["Ps9Equatable", "mapViewDidFailLoadingMap"]
 - ["Ps9Equatable", "mapViewDidFinishLoadingMap"]
@@ -612,10 +634,16 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps9ErrorType", "localizedDescription"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
 - !private ["Sf", "deinit"]
+- !private ["Sf", "init"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "init"]
 - !private ["CSo17GCDAsyncUdpSocket", "beginReceiving"]
 - !private ["CSo17GCDAsyncUdpSocket", "bindToPort"]
@@ -623,7 +651,8 @@ depends-member:
 - !private ["CSo17GCDAsyncUdpSocket", "init"]
 - !private ["CSo17GCDAsyncUdpSocket", "sendData"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "CLLocationCoordinate2DMake"]
-- ["PSo25GCDAsyncUdpSocketDelegate", "CLLocationManager"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "CLLocationManager"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "Float"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "GCDAsyncUdpSocket"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "IPAddress"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "MKCoordinateRegionMake"]
@@ -637,13 +666,11 @@ depends-member:
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "UInt16"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "_socket"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "action"]
-- !private ["PSo25GCDAsyncUdpSocketDelegate", "annotation"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "answerTextView"]
+- !private ["PSo25GCDAsyncUdpSocketDelegate", "carAnnotation"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "hostTextField"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "kCLLocationAccuracyBest"]
-- !private ["PSo25GCDAsyncUdpSocketDelegate", "latDelta"]
-- !private ["PSo25GCDAsyncUdpSocketDelegate", "latitude"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "loadDefaults"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "localIP"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "localPortTextField"]
@@ -652,8 +679,6 @@ depends-member:
 - ["PSo25GCDAsyncUdpSocketDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25GCDAsyncUdpSocketDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25GCDAsyncUdpSocketDelegate", "log"]
-- !private ["PSo25GCDAsyncUdpSocketDelegate", "lonDelta"]
-- !private ["PSo25GCDAsyncUdpSocketDelegate", "longitude"]
 - ["PSo25GCDAsyncUdpSocketDelegate", "mapView"]
 - ["PSo25GCDAsyncUdpSocketDelegate", "mapViewDidFailLoadingMap"]
 - ["PSo25GCDAsyncUdpSocketDelegate", "mapViewDidFinishLoadingMap"]
@@ -681,9 +706,12 @@ depends-member:
 - ["PSo25GCDAsyncUdpSocketDelegate", ""]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "CLLocationCoordinate2DMake"]
-- ["Ps8Hashable", "CLLocationManager"]
+- !private ["Ps8Hashable", "CLLocationManager"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "GCDAsyncUdpSocket"]
 - !private ["Ps8Hashable", "IPAddress"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "MKCoordinateRegionMake"]
 - !private ["Ps8Hashable", "MKCoordinateSpanMake"]
 - ["Ps8Hashable", "MKPointAnnotation"]
@@ -698,10 +726,11 @@ depends-member:
 - ["Ps8Hashable", "action"]
 - !private ["Ps8Hashable", "addAnnotation"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
-- ["Ps8Hashable", "annotation"]
 - ["Ps8Hashable", "answerTextView"]
 - !private ["Ps8Hashable", "beginReceiving"]
 - !private ["Ps8Hashable", "bindToPort"]
+- ["Ps8Hashable", "carAnnotation"]
+- !private ["Ps8Hashable", "characters"]
 - !private ["Ps8Hashable", "close"]
 - !private ["Ps8Hashable", "convertPoint"]
 - !private ["Ps8Hashable", "coordinate"]
@@ -716,8 +745,6 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isEmpty"]
 - !private ["Ps8Hashable", "kCLLocationAccuracyBest"]
-- ["Ps8Hashable", "latDelta"]
-- ["Ps8Hashable", "latitude"]
 - ["Ps8Hashable", "loadDefaults"]
 - ["Ps8Hashable", "localIP"]
 - ["Ps8Hashable", "localPortTextField"]
@@ -728,8 +755,6 @@ depends-member:
 - ["Ps8Hashable", "locationManagerDidResumeLocationUpdates"]
 - ["Ps8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
 - ["Ps8Hashable", "log"]
-- ["Ps8Hashable", "lonDelta"]
-- ["Ps8Hashable", "longitude"]
 - ["Ps8Hashable", "mapView"]
 - ["Ps8Hashable", "mapViewDidFailLoadingMap"]
 - ["Ps8Hashable", "mapViewDidFinishLoadingMap"]
@@ -771,19 +796,30 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["CSo9IPAddress", "getIPAddress"]
 - !private ["CSo9IPAddress", "init"]
+- !private ["VVSS13CharacterView5Index", "Distance"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "map"]
+- !private ["Ps9Indexable", "split"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "init"]
 - !private ["PSo12MKAnnotation", "coordinate"]
 - ["PSo12MKAnnotation", "init"]
@@ -793,7 +829,8 @@ depends-member:
 - !private ["CSo9MKMapView", "convertPoint"]
 - !private ["CSo9MKMapView", "setRegion"]
 - !private ["PSo17MKMapViewDelegate", "CLLocationCoordinate2DMake"]
-- ["PSo17MKMapViewDelegate", "CLLocationManager"]
+- !private ["PSo17MKMapViewDelegate", "CLLocationManager"]
+- !private ["PSo17MKMapViewDelegate", "Float"]
 - !private ["PSo17MKMapViewDelegate", "GCDAsyncUdpSocket"]
 - !private ["PSo17MKMapViewDelegate", "IPAddress"]
 - !private ["PSo17MKMapViewDelegate", "MKCoordinateRegionMake"]
@@ -807,13 +844,11 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UInt16"]
 - !private ["PSo17MKMapViewDelegate", "_socket"]
 - !private ["PSo17MKMapViewDelegate", "action"]
-- !private ["PSo17MKMapViewDelegate", "annotation"]
 - !private ["PSo17MKMapViewDelegate", "answerTextView"]
+- !private ["PSo17MKMapViewDelegate", "carAnnotation"]
 - !private ["PSo17MKMapViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo17MKMapViewDelegate", "hostTextField"]
 - !private ["PSo17MKMapViewDelegate", "kCLLocationAccuracyBest"]
-- !private ["PSo17MKMapViewDelegate", "latDelta"]
-- !private ["PSo17MKMapViewDelegate", "latitude"]
 - !private ["PSo17MKMapViewDelegate", "loadDefaults"]
 - !private ["PSo17MKMapViewDelegate", "localIP"]
 - !private ["PSo17MKMapViewDelegate", "localPortTextField"]
@@ -822,8 +857,6 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo17MKMapViewDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo17MKMapViewDelegate", "log"]
-- !private ["PSo17MKMapViewDelegate", "lonDelta"]
-- !private ["PSo17MKMapViewDelegate", "longitude"]
 - ["PSo17MKMapViewDelegate", "mapView"]
 - ["PSo17MKMapViewDelegate", "mapViewDidFailLoadingMap"]
 - ["PSo17MKMapViewDelegate", "mapViewDidFinishLoadingMap"]
@@ -855,17 +888,33 @@ depends-member:
 - !private ["CSo7MKShape", "coordinate"]
 - ["CSo7MKShape", "init"]
 - !private ["CSo7MKShape", "title"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "characters"]
 - !private ["Ps14MirrorPathType", "dataUsingEncoding"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "isEmpty"]
+- !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "map"]
 - !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "map"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "map"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CLLocationCoordinate2DMake"]
-- ["PSo8NSCoding", "CLLocationManager"]
+- !private ["PSo8NSCoding", "CLLocationManager"]
+- !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "GCDAsyncUdpSocket"]
 - !private ["PSo8NSCoding", "IPAddress"]
 - !private ["PSo8NSCoding", "MKCoordinateRegionMake"]
@@ -881,10 +930,10 @@ depends-member:
 - ["PSo8NSCoding", "action"]
 - !private ["PSo8NSCoding", "addAnnotation"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
-- ["PSo8NSCoding", "annotation"]
 - ["PSo8NSCoding", "answerTextView"]
+- ["PSo8NSCoding", "carAnnotation"]
+- !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "convertPoint"]
-- !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
@@ -893,8 +942,6 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isEmpty"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyBest"]
-- ["PSo8NSCoding", "latDelta"]
-- ["PSo8NSCoding", "latitude"]
 - ["PSo8NSCoding", "loadDefaults"]
 - ["PSo8NSCoding", "localIP"]
 - ["PSo8NSCoding", "localPortTextField"]
@@ -904,8 +951,6 @@ depends-member:
 - ["PSo8NSCoding", "locationManagerDidResumeLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo8NSCoding", "log"]
-- ["PSo8NSCoding", "lonDelta"]
-- ["PSo8NSCoding", "longitude"]
 - ["PSo8NSCoding", "mapView"]
 - ["PSo8NSCoding", "mapViewDidFailLoadingMap"]
 - ["PSo8NSCoding", "mapViewDidFinishLoadingMap"]
@@ -936,14 +981,15 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "isEmpty"]
 - !private ["PSo9NSCopying", "localizedDescription"]
 - !private ["CSo7NSError", "localizedDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "CLLocationCoordinate2DMake"]
-- ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
+- !private ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
+- !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "GCDAsyncUdpSocket"]
 - !private ["PSo26NSExtensionRequestHandling", "IPAddress"]
 - !private ["PSo26NSExtensionRequestHandling", "MKCoordinateRegionMake"]
@@ -957,15 +1003,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UInt16"]
 - ["PSo26NSExtensionRequestHandling", "_socket"]
 - ["PSo26NSExtensionRequestHandling", "action"]
-- ["PSo26NSExtensionRequestHandling", "annotation"]
 - ["PSo26NSExtensionRequestHandling", "answerTextView"]
+- ["PSo26NSExtensionRequestHandling", "carAnnotation"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
 - ["PSo26NSExtensionRequestHandling", "hostTextField"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "kCLLocationAccuracyBest"]
-- ["PSo26NSExtensionRequestHandling", "latDelta"]
-- ["PSo26NSExtensionRequestHandling", "latitude"]
 - ["PSo26NSExtensionRequestHandling", "loadDefaults"]
 - ["PSo26NSExtensionRequestHandling", "localIP"]
 - ["PSo26NSExtensionRequestHandling", "localPortTextField"]
@@ -974,8 +1018,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locationManagerDidResumeLocationUpdates"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo26NSExtensionRequestHandling", "log"]
-- ["PSo26NSExtensionRequestHandling", "lonDelta"]
-- ["PSo26NSExtensionRequestHandling", "longitude"]
 - ["PSo26NSExtensionRequestHandling", "mapView"]
 - ["PSo26NSExtensionRequestHandling", "mapViewDidFailLoadingMap"]
 - ["PSo26NSExtensionRequestHandling", "mapViewDidFinishLoadingMap"]
@@ -1003,16 +1045,17 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "characters"]
 - !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- ["CSo8NSObject", "CLLocation"]
 - !private ["CSo8NSObject", "CLLocationCoordinate2D"]
 - !private ["CSo8NSObject", "CLLocationCoordinate2DMake"]
-- ["CSo8NSObject", "CLLocationDegrees"]
-- ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "CLLocationDegrees"]
+- !private ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "Float"]
 - ["CSo8NSObject", "GCDAsyncUdpSocket"]
 - !private ["CSo8NSObject", "IPAddress"]
 - !private ["CSo8NSObject", "MKCoordinateRegion"]
@@ -1040,10 +1083,11 @@ depends-member:
 - ["CSo8NSObject", "action"]
 - !private ["CSo8NSObject", "addAnnotation"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
-- ["CSo8NSObject", "annotation"]
 - ["CSo8NSObject", "answerTextView"]
 - !private ["CSo8NSObject", "beginReceiving"]
 - !private ["CSo8NSObject", "bindToPort"]
+- ["CSo8NSObject", "carAnnotation"]
+- !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "close"]
 - !private ["CSo8NSObject", "convertPoint"]
 - !private ["CSo8NSObject", "coordinate"]
@@ -1058,8 +1102,6 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isEmpty"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyBest"]
-- ["CSo8NSObject", "latDelta"]
-- ["CSo8NSObject", "latitude"]
 - ["CSo8NSObject", "loadDefaults"]
 - ["CSo8NSObject", "localIP"]
 - ["CSo8NSObject", "localPortTextField"]
@@ -1070,8 +1112,6 @@ depends-member:
 - ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
 - ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo8NSObject", "log"]
-- ["CSo8NSObject", "lonDelta"]
-- ["CSo8NSObject", "longitude"]
 - ["CSo8NSObject", "mapView"]
 - ["CSo8NSObject", "mapViewDidFailLoadingMap"]
 - ["CSo8NSObject", "mapViewDidFinishLoadingMap"]
@@ -1111,7 +1151,8 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CLLocationCoordinate2DMake"]
-- ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "GCDAsyncUdpSocket"]
 - !private ["PSo16NSObjectProtocol", "IPAddress"]
 - !private ["PSo16NSObjectProtocol", "MKCoordinateRegionMake"]
@@ -1127,10 +1168,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "action"]
 - !private ["PSo16NSObjectProtocol", "addAnnotation"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
-- ["PSo16NSObjectProtocol", "annotation"]
 - ["PSo16NSObjectProtocol", "answerTextView"]
 - !private ["PSo16NSObjectProtocol", "beginReceiving"]
 - !private ["PSo16NSObjectProtocol", "bindToPort"]
+- ["PSo16NSObjectProtocol", "carAnnotation"]
+- !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "close"]
 - !private ["PSo16NSObjectProtocol", "convertPoint"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
@@ -1145,8 +1187,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isEmpty"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBest"]
-- ["PSo16NSObjectProtocol", "latDelta"]
-- ["PSo16NSObjectProtocol", "latitude"]
 - ["PSo16NSObjectProtocol", "loadDefaults"]
 - ["PSo16NSObjectProtocol", "localIP"]
 - ["PSo16NSObjectProtocol", "localPortTextField"]
@@ -1157,8 +1197,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo16NSObjectProtocol", "log"]
-- ["PSo16NSObjectProtocol", "lonDelta"]
-- ["PSo16NSObjectProtocol", "longitude"]
 - ["PSo16NSObjectProtocol", "mapView"]
 - ["PSo16NSObjectProtocol", "mapViewDidFailLoadingMap"]
 - ["PSo16NSObjectProtocol", "mapViewDidFinishLoadingMap"]
@@ -1198,12 +1236,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "characters"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "isEmpty"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["CSo8NSString", "characters"]
 - !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
 - !private ["CSo14NSUserDefaults", "setObject"]
@@ -1213,11 +1253,19 @@ depends-member:
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "characters"]
 - !private ["Ps16OutputStreamType", "dataUsingEncoding"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "isEmpty"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "map"]
+- !private ["Ps30RangeReplaceableCollectionType", "split"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps12SequenceType", "Element"]
@@ -1225,22 +1273,35 @@ depends-member:
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "map"]
+- !private ["Ps12SequenceType", "split"]
 - !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "init"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "characters"]
 - !private ["Ps10Streamable", "dataUsingEncoding"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Streamable", "isEmpty"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "init"]
+- !private ["SS", "characters"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "isEmpty"]
+- !private ["Ps30StringInterpolationConvertible", "characters"]
 - !private ["Ps30StringInterpolationConvertible", "dataUsingEncoding"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps30StringInterpolationConvertible", "isEmpty"]
+- !private ["Ps24StringLiteralConvertible", "characters"]
 - !private ["Ps24StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "isEmpty"]
@@ -1259,7 +1320,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "setRegion"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationCoordinate2DMake"]
-- ["PSo21UIAppearanceContainer", "CLLocationManager"]
+- !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
+- !private ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "GCDAsyncUdpSocket"]
 - !private ["PSo21UIAppearanceContainer", "IPAddress"]
 - !private ["PSo21UIAppearanceContainer", "MKCoordinateRegionMake"]
@@ -1275,8 +1337,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "action"]
 - !private ["PSo21UIAppearanceContainer", "addAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
-- ["PSo21UIAppearanceContainer", "annotation"]
 - ["PSo21UIAppearanceContainer", "answerTextView"]
+- ["PSo21UIAppearanceContainer", "carAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "convertPoint"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
@@ -1284,8 +1346,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "hostTextField"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBest"]
-- ["PSo21UIAppearanceContainer", "latDelta"]
-- ["PSo21UIAppearanceContainer", "latitude"]
 - ["PSo21UIAppearanceContainer", "loadDefaults"]
 - ["PSo21UIAppearanceContainer", "localIP"]
 - ["PSo21UIAppearanceContainer", "localPortTextField"]
@@ -1294,8 +1354,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo21UIAppearanceContainer", "log"]
-- ["PSo21UIAppearanceContainer", "lonDelta"]
-- ["PSo21UIAppearanceContainer", "longitude"]
 - ["PSo21UIAppearanceContainer", "mapView"]
 - ["PSo21UIAppearanceContainer", "mapViewDidFailLoadingMap"]
 - ["PSo21UIAppearanceContainer", "mapViewDidFinishLoadingMap"]
@@ -1327,7 +1385,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CLLocationCoordinate2DMake"]
-- ["PSo18UIContentContainer", "CLLocationManager"]
+- !private ["PSo18UIContentContainer", "CLLocationManager"]
+- !private ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "GCDAsyncUdpSocket"]
 - !private ["PSo18UIContentContainer", "IPAddress"]
 - !private ["PSo18UIContentContainer", "MKCoordinateRegionMake"]
@@ -1341,15 +1400,13 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UInt16"]
 - ["PSo18UIContentContainer", "_socket"]
 - ["PSo18UIContentContainer", "action"]
-- ["PSo18UIContentContainer", "annotation"]
 - ["PSo18UIContentContainer", "answerTextView"]
+- ["PSo18UIContentContainer", "carAnnotation"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
 - ["PSo18UIContentContainer", "hostTextField"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "kCLLocationAccuracyBest"]
-- ["PSo18UIContentContainer", "latDelta"]
-- ["PSo18UIContentContainer", "latitude"]
 - ["PSo18UIContentContainer", "loadDefaults"]
 - ["PSo18UIContentContainer", "localIP"]
 - ["PSo18UIContentContainer", "localPortTextField"]
@@ -1358,8 +1415,6 @@ depends-member:
 - ["PSo18UIContentContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UIContentContainer", "log"]
-- ["PSo18UIContentContainer", "lonDelta"]
-- ["PSo18UIContentContainer", "longitude"]
 - ["PSo18UIContentContainer", "mapView"]
 - ["PSo18UIContentContainer", "mapViewDidFailLoadingMap"]
 - ["PSo18UIContentContainer", "mapViewDidFinishLoadingMap"]
@@ -1404,7 +1459,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setRegion"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationCoordinate2DMake"]
-- ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- !private ["PSo18UIFocusEnvironment", "Float"]
 - !private ["PSo18UIFocusEnvironment", "GCDAsyncUdpSocket"]
 - !private ["PSo18UIFocusEnvironment", "IPAddress"]
 - !private ["PSo18UIFocusEnvironment", "MKCoordinateRegionMake"]
@@ -1420,8 +1476,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "action"]
 - !private ["PSo18UIFocusEnvironment", "addAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
-- ["PSo18UIFocusEnvironment", "annotation"]
 - ["PSo18UIFocusEnvironment", "answerTextView"]
+- ["PSo18UIFocusEnvironment", "carAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "convertPoint"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
@@ -1429,8 +1485,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "hostTextField"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
-- ["PSo18UIFocusEnvironment", "latDelta"]
-- ["PSo18UIFocusEnvironment", "latitude"]
 - ["PSo18UIFocusEnvironment", "loadDefaults"]
 - ["PSo18UIFocusEnvironment", "localIP"]
 - ["PSo18UIFocusEnvironment", "localPortTextField"]
@@ -1439,8 +1493,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UIFocusEnvironment", "log"]
-- ["PSo18UIFocusEnvironment", "lonDelta"]
-- ["PSo18UIFocusEnvironment", "longitude"]
 - ["PSo18UIFocusEnvironment", "mapView"]
 - ["PSo18UIFocusEnvironment", "mapViewDidFailLoadingMap"]
 - ["PSo18UIFocusEnvironment", "mapViewDidFinishLoadingMap"]
@@ -1481,11 +1533,11 @@ depends-member:
 - !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- ["CSo11UIResponder", "CLLocation"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2D"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2DMake"]
-- ["CSo11UIResponder", "CLLocationDegrees"]
-- ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "CLLocationDegrees"]
+- !private ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "Float"]
 - ["CSo11UIResponder", "GCDAsyncUdpSocket"]
 - !private ["CSo11UIResponder", "IPAddress"]
 - !private ["CSo11UIResponder", "MKCoordinateRegion"]
@@ -1513,8 +1565,8 @@ depends-member:
 - ["CSo11UIResponder", "action"]
 - !private ["CSo11UIResponder", "addAnnotation"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
-- ["CSo11UIResponder", "annotation"]
 - ["CSo11UIResponder", "answerTextView"]
+- ["CSo11UIResponder", "carAnnotation"]
 - !private ["CSo11UIResponder", "convertPoint"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
@@ -1522,8 +1574,6 @@ depends-member:
 - ["CSo11UIResponder", "hostTextField"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
-- ["CSo11UIResponder", "latDelta"]
-- ["CSo11UIResponder", "latitude"]
 - ["CSo11UIResponder", "loadDefaults"]
 - ["CSo11UIResponder", "localIP"]
 - ["CSo11UIResponder", "localPortTextField"]
@@ -1532,8 +1582,6 @@ depends-member:
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo11UIResponder", "log"]
-- ["CSo11UIResponder", "lonDelta"]
-- ["CSo11UIResponder", "longitude"]
 - ["CSo11UIResponder", "mapView"]
 - ["CSo11UIResponder", "mapViewDidFailLoadingMap"]
 - ["CSo11UIResponder", "mapViewDidFinishLoadingMap"]
@@ -1565,7 +1613,8 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "text"]
 - !private ["PSo16UIStateRestoring", "CLLocationCoordinate2DMake"]
-- ["PSo16UIStateRestoring", "CLLocationManager"]
+- !private ["PSo16UIStateRestoring", "CLLocationManager"]
+- !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "GCDAsyncUdpSocket"]
 - !private ["PSo16UIStateRestoring", "IPAddress"]
 - !private ["PSo16UIStateRestoring", "MKCoordinateRegionMake"]
@@ -1579,15 +1628,13 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UInt16"]
 - ["PSo16UIStateRestoring", "_socket"]
 - ["PSo16UIStateRestoring", "action"]
-- ["PSo16UIStateRestoring", "annotation"]
 - ["PSo16UIStateRestoring", "answerTextView"]
+- ["PSo16UIStateRestoring", "carAnnotation"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
 - ["PSo16UIStateRestoring", "hostTextField"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "kCLLocationAccuracyBest"]
-- ["PSo16UIStateRestoring", "latDelta"]
-- ["PSo16UIStateRestoring", "latitude"]
 - ["PSo16UIStateRestoring", "loadDefaults"]
 - ["PSo16UIStateRestoring", "localIP"]
 - ["PSo16UIStateRestoring", "localPortTextField"]
@@ -1596,8 +1643,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo16UIStateRestoring", "log"]
-- ["PSo16UIStateRestoring", "lonDelta"]
-- ["PSo16UIStateRestoring", "longitude"]
 - ["PSo16UIStateRestoring", "mapView"]
 - ["PSo16UIStateRestoring", "mapViewDidFailLoadingMap"]
 - ["PSo16UIStateRestoring", "mapViewDidFinishLoadingMap"]
@@ -1628,7 +1673,8 @@ depends-member:
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "CLLocationCoordinate2DMake"]
-- ["PSo19UITextFieldDelegate", "CLLocationManager"]
+- !private ["PSo19UITextFieldDelegate", "CLLocationManager"]
+- !private ["PSo19UITextFieldDelegate", "Float"]
 - !private ["PSo19UITextFieldDelegate", "GCDAsyncUdpSocket"]
 - !private ["PSo19UITextFieldDelegate", "IPAddress"]
 - !private ["PSo19UITextFieldDelegate", "MKCoordinateRegionMake"]
@@ -1642,13 +1688,11 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UInt16"]
 - !private ["PSo19UITextFieldDelegate", "_socket"]
 - !private ["PSo19UITextFieldDelegate", "action"]
-- !private ["PSo19UITextFieldDelegate", "annotation"]
 - !private ["PSo19UITextFieldDelegate", "answerTextView"]
+- !private ["PSo19UITextFieldDelegate", "carAnnotation"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITextFieldDelegate", "hostTextField"]
 - !private ["PSo19UITextFieldDelegate", "kCLLocationAccuracyBest"]
-- !private ["PSo19UITextFieldDelegate", "latDelta"]
-- !private ["PSo19UITextFieldDelegate", "latitude"]
 - !private ["PSo19UITextFieldDelegate", "loadDefaults"]
 - !private ["PSo19UITextFieldDelegate", "localIP"]
 - !private ["PSo19UITextFieldDelegate", "localPortTextField"]
@@ -1657,8 +1701,6 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo19UITextFieldDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo19UITextFieldDelegate", "log"]
-- !private ["PSo19UITextFieldDelegate", "lonDelta"]
-- !private ["PSo19UITextFieldDelegate", "longitude"]
 - ["PSo19UITextFieldDelegate", "mapView"]
 - ["PSo19UITextFieldDelegate", "mapViewDidFailLoadingMap"]
 - ["PSo19UITextFieldDelegate", "mapViewDidFinishLoadingMap"]
@@ -1690,7 +1732,8 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["CSo10UITextView", "text"]
 - !private ["PSo18UITraitEnvironment", "CLLocationCoordinate2DMake"]
-- ["PSo18UITraitEnvironment", "CLLocationManager"]
+- !private ["PSo18UITraitEnvironment", "CLLocationManager"]
+- !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "GCDAsyncUdpSocket"]
 - !private ["PSo18UITraitEnvironment", "IPAddress"]
 - !private ["PSo18UITraitEnvironment", "MKCoordinateRegionMake"]
@@ -1706,8 +1749,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "action"]
 - !private ["PSo18UITraitEnvironment", "addAnnotation"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
-- ["PSo18UITraitEnvironment", "annotation"]
 - ["PSo18UITraitEnvironment", "answerTextView"]
+- ["PSo18UITraitEnvironment", "carAnnotation"]
 - !private ["PSo18UITraitEnvironment", "convertPoint"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
@@ -1715,8 +1758,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "hostTextField"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBest"]
-- ["PSo18UITraitEnvironment", "latDelta"]
-- ["PSo18UITraitEnvironment", "latitude"]
 - ["PSo18UITraitEnvironment", "loadDefaults"]
 - ["PSo18UITraitEnvironment", "localIP"]
 - ["PSo18UITraitEnvironment", "localPortTextField"]
@@ -1725,8 +1766,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UITraitEnvironment", "log"]
-- ["PSo18UITraitEnvironment", "lonDelta"]
-- ["PSo18UITraitEnvironment", "longitude"]
 - ["PSo18UITraitEnvironment", "mapView"]
 - ["PSo18UITraitEnvironment", "mapViewDidFailLoadingMap"]
 - ["PSo18UITraitEnvironment", "mapViewDidFinishLoadingMap"]
@@ -1766,11 +1805,11 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
-- ["CSo16UIViewController", "CLLocation"]
 - !private ["CSo16UIViewController", "CLLocationCoordinate2D"]
 - !private ["CSo16UIViewController", "CLLocationCoordinate2DMake"]
-- ["CSo16UIViewController", "CLLocationDegrees"]
-- ["CSo16UIViewController", "CLLocationManager"]
+- !private ["CSo16UIViewController", "CLLocationDegrees"]
+- !private ["CSo16UIViewController", "CLLocationManager"]
+- !private ["CSo16UIViewController", "Float"]
 - ["CSo16UIViewController", "GCDAsyncUdpSocket"]
 - !private ["CSo16UIViewController", "IPAddress"]
 - !private ["CSo16UIViewController", "MKCoordinateRegion"]
@@ -1796,15 +1835,13 @@ depends-member:
 - !private ["CSo16UIViewController", "UInt16"]
 - ["CSo16UIViewController", "_socket"]
 - ["CSo16UIViewController", "action"]
-- ["CSo16UIViewController", "annotation"]
 - ["CSo16UIViewController", "answerTextView"]
+- ["CSo16UIViewController", "carAnnotation"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
 - ["CSo16UIViewController", "hostTextField"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "kCLLocationAccuracyBest"]
-- ["CSo16UIViewController", "latDelta"]
-- ["CSo16UIViewController", "latitude"]
 - ["CSo16UIViewController", "loadDefaults"]
 - ["CSo16UIViewController", "localIP"]
 - ["CSo16UIViewController", "localPortTextField"]
@@ -1813,8 +1850,6 @@ depends-member:
 - ["CSo16UIViewController", "locationManagerDidResumeLocationUpdates"]
 - ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo16UIViewController", "log"]
-- ["CSo16UIViewController", "lonDelta"]
-- ["CSo16UIViewController", "longitude"]
 - ["CSo16UIViewController", "mapView"]
 - ["CSo16UIViewController", "mapViewDidFailLoadingMap"]
 - ["CSo16UIViewController", "mapViewDidFinishLoadingMap"]
@@ -1849,17 +1884,18 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "characters"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "isEmpty"]
 - !private ["Ps19UnsignedIntegerType", "init"]
 - ["C6GPSCar14ViewController", "AnyObject"]
 - ["C6GPSCar14ViewController", "Bool"]
-- ["C6GPSCar14ViewController", "CLLocation"]
 - !private ["C6GPSCar14ViewController", "CLLocationCoordinate2D"]
 - !private ["C6GPSCar14ViewController", "CLLocationCoordinate2DMake"]
-- ["C6GPSCar14ViewController", "CLLocationDegrees"]
-- ["C6GPSCar14ViewController", "CLLocationManager"]
+- !private ["C6GPSCar14ViewController", "CLLocationDegrees"]
+- !private ["C6GPSCar14ViewController", "CLLocationManager"]
+- !private ["C6GPSCar14ViewController", "Float"]
 - ["C6GPSCar14ViewController", "GCDAsyncUdpSocket"]
 - !private ["C6GPSCar14ViewController", "IPAddress"]
 - !private ["C6GPSCar14ViewController", "MKCoordinateRegion"]
@@ -1885,16 +1921,14 @@ depends-member:
 - !private ["C6GPSCar14ViewController", "UInt16"]
 - ["C6GPSCar14ViewController", "_socket"]
 - ["C6GPSCar14ViewController", "action"]
-- ["C6GPSCar14ViewController", "annotation"]
 - ["C6GPSCar14ViewController", "answerTextView"]
+- ["C6GPSCar14ViewController", "carAnnotation"]
 - ["C6GPSCar14ViewController", "deinit"]
 - ["C6GPSCar14ViewController", "didReceiveMemoryWarning"]
 - !private ["C6GPSCar14ViewController", "dispatch_get_main_queue"]
 - ["C6GPSCar14ViewController", "hostTextField"]
 - ["C6GPSCar14ViewController", "init"]
 - !private ["C6GPSCar14ViewController", "kCLLocationAccuracyBest"]
-- ["C6GPSCar14ViewController", "latDelta"]
-- ["C6GPSCar14ViewController", "latitude"]
 - !private ["C6GPSCar14ViewController", "loadDefaults"]
 - ["C6GPSCar14ViewController", "localIP"]
 - ["C6GPSCar14ViewController", "localPortTextField"]
@@ -1903,8 +1937,6 @@ depends-member:
 - ["C6GPSCar14ViewController", "locationManagerDidResumeLocationUpdates"]
 - ["C6GPSCar14ViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["C6GPSCar14ViewController", "log"]
-- ["C6GPSCar14ViewController", "lonDelta"]
-- ["C6GPSCar14ViewController", "longitude"]
 - ["C6GPSCar14ViewController", "mapView"]
 - ["C6GPSCar14ViewController", "mapViewDidFailLoadingMap"]
 - ["C6GPSCar14ViewController", "mapViewDidFinishLoadingMap"]
@@ -1931,66 +1963,110 @@ depends-member:
 - ["C6GPSCar14ViewController", "udpSocketDidClose"]
 - !private ["C6GPSCar14ViewController", "view"]
 - ["C6GPSCar14ViewController", "viewDidLoad"]
+- !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "map"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "characters"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "isEmpty"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "characters"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "map"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "init"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "characters"]
 - !private ["Ps21_ObjectiveCBridgeable", "dataUsingEncoding"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "map"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addAnnotation"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
+- !private ["Ps12_Reflectable", "characters"]
 - !private ["Ps12_Reflectable", "convertPoint"]
 - !private ["Ps12_Reflectable", "dataUsingEncoding"]
 - !private ["Ps12_Reflectable", "endEditing"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "isEmpty"]
+- !private ["Ps12_Reflectable", "map"]
 - !private ["Ps12_Reflectable", "resignFirstResponder"]
 - !private ["Ps12_Reflectable", "setRegion"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps18_StringElementType", "init"]
 depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "Vs12AnyGenerator"
 - "Ps9AnyObject"
+- !private "Vs11AnySequence"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
-- !private "CSo10CLLocation"
-- !private "VSC22CLLocationCoordinate2D"
-- "CSo17CLLocationManager"
+- !private "CSo17CLLocationManager"
 - "PSo25CLLocationManagerDelegate"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
+- !private "VSS13CharacterView"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -2000,12 +2076,15 @@ depends-nominal:
 - !private "Ps9ErrorType"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
 - !private "Ps16ForwardIndexType"
 - !private "CSo17GCDAsyncUdpSocket"
 - "PSo25GCDAsyncUdpSocketDelegate"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
 - !private "CSo9IPAddress"
+- !private "VVSS13CharacterView5Index"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
@@ -2042,6 +2121,8 @@ depends-nominal:
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "V10ObjectiveC8Selector"
 - !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
 - !private "Ps10Streamable"
 - !private "Ps10Strideable"
@@ -2083,10 +2164,13 @@ depends-nominal:
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps31_BuiltinFloatLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps14_Incrementable"
@@ -2096,6 +2180,7 @@ depends-nominal:
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
 - "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 - !private "Ps18_StringElementType"
 depends-dynamic-lookup:
 depends-external:
@@ -2117,4 +2202,4 @@ depends-external:
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "f5944d296150e429e1d72901519a8451"
+interface-hash: "55762a8212d0fca15fdc30f5699860b2"

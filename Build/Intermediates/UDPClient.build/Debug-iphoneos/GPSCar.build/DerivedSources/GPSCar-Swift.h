@@ -116,10 +116,8 @@ SWIFT_CLASS("_TtC6GPSCar11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocationManager;
 @class MKPointAnnotation;
 @class GCDAsyncUdpSocket;
-@class CLLocation;
 @class UIGestureRecognizer;
 @class NSData;
 @class UITouch;
@@ -139,19 +137,13 @@ SWIFT_CLASS("_TtC6GPSCar14ViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified messageTextField;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified answerTextView;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified Map_show;
-@property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
-@property (nonatomic) CLLocationDegrees latitude;
-@property (nonatomic) CLLocationDegrees longitude;
-@property (nonatomic) CLLocationDegrees latDelta;
-@property (nonatomic) CLLocationDegrees lonDelta;
-@property (nonatomic, strong) MKPointAnnotation * _Nonnull annotation;
+@property (nonatomic, strong) MKPointAnnotation * _Nonnull carAnnotation;
 
 /// <hr/>
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified localIP;
 @property (nonatomic, strong) GCDAsyncUdpSocket * _Nullable _socket;
 @property (nonatomic, strong) GCDAsyncUdpSocket * _Nullable socket;
 - (void)viewDidLoad;
-- (void)locationManager:(CLLocationManager * _Null_unspecified)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)action:(UIGestureRecognizer * _Nonnull)gestureRecognizer;
 - (void)didReceiveMemoryWarning;
 - (IBAction)sendPacket:(id _Nonnull)sender;
