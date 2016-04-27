@@ -6,74 +6,72 @@ provides-nominal:
 provides-member:
 - ["C6GPSCar14ViewController", ""]
 provides-dynamic-lookup:
-- "answerTextView"
-- "locationManager"
-- "textFieldShouldReturn"
-- "remotePortTextField"
-- "udpSocket"
-- "localIP"
-- "action"
-- "hostTextField"
-- "Map_show"
-- "viewDidLoad"
-- "sendPacket"
-- "messageTextField"
-- "didReceiveMemoryWarning"
-- "socket"
-- "_socket"
 - "touchesBegan"
-- "localPortTextField"
+- "remotePortTextField"
+- "localIP"
+- "udpSocket"
+- "action"
+- "answerTextView"
+- "sendPacket"
+- "viewDidLoad"
+- "_socket"
+- "textFieldShouldReturn"
 - "carAnnotation"
+- "hostTextField"
+- "socket"
+- "localPortTextField"
+- "Map_show"
+- "didReceiveMemoryWarning"
+- "messageTextField"
 depends-top-level:
-- !private "UInt16"
-- "MKPointAnnotation"
-- !private "!="
+- "MKMapViewDelegate"
+- "UITextView"
+- !private "print"
+- "UITextFieldDelegate"
 - !private "=="
-- !private "UnicodeScalarType"
-- !private ">"
-- "AnyObject"
-- !private "!"
-- "UIGestureRecognizer"
+- "GCDAsyncUdpSocketDelegate"
+- "UIViewController"
+- !private "CLLocationManager"
+- !private "!="
+- !private "MKCoordinateRegionMake"
 - "Bool"
-- !private "CLLocationDegrees"
+- !private "MKCoordinateRegion"
+- !private "!"
+- "CLLocationManagerDelegate"
+- !private ">"
+- !private "UILongPressGestureRecognizer"
+- !private "kCLLocationAccuracyBest"
+- !private "CLLocationCoordinate2D"
+- "UITextField"
+- "UIGestureRecognizer"
+- !private "Float"
 - !private "ExtendedGraphemeClusterType"
+- !private "NSUserDefaults"
+- !private "dispatch_get_main_queue"
+- !private "CLLocationCoordinate2DMake"
+- !private "+"
+- "MKMapView"
+- !private "MKCoordinateSpanMake"
+- !private "MKCoordinateSpan"
 - !private "??"
 - !private "NSUTF8StringEncoding"
-- "UITextField"
-- "MKMapView"
-- !private "kCLLocationAccuracyBest"
-- !private "dispatch_get_main_queue"
-- !private "NSUserDefaults"
-- "CLLocationManager"
-- "NSData"
-- !private "print"
-- !private "BooleanLiteralType"
-- !private "Float"
-- !private "+"
-- "CLLocation"
-- !private "UILongPressGestureRecognizer"
-- !private "String"
-- !private "CLLocationCoordinate2DMake"
-- "ViewController"
-- !private "CLLocationCoordinate2D"
-- "UITextView"
+- !private "UInt16"
 - !private "StringLiteralType"
-- !private "MKCoordinateRegion"
-- !private "MKCoordinateRegionMake"
+- "MKPointAnnotation"
+- "NSData"
+- !private "UnicodeScalarType"
+- !private "IPAddress"
+- "AnyObject"
+- !private "CLLocationDegrees"
 - "UIEvent"
-- !private "NSError"
+- "GCDAsyncUdpSocket"
 - "UILabel"
 - "Set"
 - "UITouch"
-- !private "IPAddress"
-- "CLLocationManagerDelegate"
-- "MKMapViewDelegate"
-- !private "MKCoordinateSpanMake"
-- "UITextFieldDelegate"
-- "GCDAsyncUdpSocketDelegate"
-- !private "MKCoordinateSpan"
-- "UIViewController"
-- "GCDAsyncUdpSocket"
+- !private "String"
+- !private "NSError"
+- !private "BooleanLiteralType"
+- "ViewController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Vs12AnyGenerator", "Element"]
@@ -190,9 +188,6 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["CSo10CLLocation", "coordinate"]
-- !private ["VSC22CLLocationCoordinate2D", "latitude"]
-- !private ["VSC22CLLocationCoordinate2D", "longitude"]
 - !private ["CSo17CLLocationManager", "delegate"]
 - !private ["CSo17CLLocationManager", "desiredAccuracy"]
 - !private ["CSo17CLLocationManager", "init"]
@@ -939,7 +934,6 @@ depends-member:
 - ["PSo8NSCoding", "carAnnotation"]
 - !private ["PSo8NSCoding", "characters"]
 - !private ["PSo8NSCoding", "convertPoint"]
-- !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
@@ -988,7 +982,6 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "characters"]
-- !private ["PSo9NSCopying", "coordinate"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "isEmpty"]
@@ -1058,11 +1051,10 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- ["CSo8NSObject", "CLLocation"]
 - !private ["CSo8NSObject", "CLLocationCoordinate2D"]
 - !private ["CSo8NSObject", "CLLocationCoordinate2DMake"]
 - !private ["CSo8NSObject", "CLLocationDegrees"]
-- ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "CLLocationManager"]
 - !private ["CSo8NSObject", "Float"]
 - ["CSo8NSObject", "GCDAsyncUdpSocket"]
 - !private ["CSo8NSObject", "IPAddress"]
@@ -1245,13 +1237,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "characters"]
-- !private ["PSo14NSSecureCoding", "coordinate"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "isEmpty"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["CSo8NSString", "characters"]
 - !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
 - !private ["CSo14NSUserDefaults", "setObject"]
@@ -1541,11 +1533,10 @@ depends-member:
 - !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- ["CSo11UIResponder", "CLLocation"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2D"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2DMake"]
 - !private ["CSo11UIResponder", "CLLocationDegrees"]
-- ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "CLLocationManager"]
 - !private ["CSo11UIResponder", "Float"]
 - ["CSo11UIResponder", "GCDAsyncUdpSocket"]
 - !private ["CSo11UIResponder", "IPAddress"]
@@ -1814,11 +1805,10 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
-- ["CSo16UIViewController", "CLLocation"]
 - !private ["CSo16UIViewController", "CLLocationCoordinate2D"]
 - !private ["CSo16UIViewController", "CLLocationCoordinate2DMake"]
 - !private ["CSo16UIViewController", "CLLocationDegrees"]
-- ["CSo16UIViewController", "CLLocationManager"]
+- !private ["CSo16UIViewController", "CLLocationManager"]
 - !private ["CSo16UIViewController", "Float"]
 - ["CSo16UIViewController", "GCDAsyncUdpSocket"]
 - !private ["CSo16UIViewController", "IPAddress"]
@@ -1901,11 +1891,10 @@ depends-member:
 - !private ["Ps19UnsignedIntegerType", "init"]
 - ["C6GPSCar14ViewController", "AnyObject"]
 - ["C6GPSCar14ViewController", "Bool"]
-- ["C6GPSCar14ViewController", "CLLocation"]
 - !private ["C6GPSCar14ViewController", "CLLocationCoordinate2D"]
 - !private ["C6GPSCar14ViewController", "CLLocationCoordinate2DMake"]
 - !private ["C6GPSCar14ViewController", "CLLocationDegrees"]
-- ["C6GPSCar14ViewController", "CLLocationManager"]
+- !private ["C6GPSCar14ViewController", "CLLocationManager"]
 - !private ["C6GPSCar14ViewController", "Float"]
 - ["C6GPSCar14ViewController", "GCDAsyncUdpSocket"]
 - !private ["C6GPSCar14ViewController", "IPAddress"]
@@ -2073,8 +2062,6 @@ depends-nominal:
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
-- !private "CSo10CLLocation"
-- !private "VSC22CLLocationCoordinate2D"
 - !private "CSo17CLLocationManager"
 - "PSo25CLLocationManagerDelegate"
 - "Ps11CVarArgType"
@@ -2215,4 +2202,4 @@ depends-external:
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket.h"
 - "/Users/Tibbers/Google Drive/2016Spring/RealTimeSystems/project/udpclient_swift-master/Carthage/Build/iOS/CocoaAsyncSocket.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "a6606f1f181035dea652e82fd5ccbcf1"
+interface-hash: "55762a8212d0fca15fdc30f5699860b2"

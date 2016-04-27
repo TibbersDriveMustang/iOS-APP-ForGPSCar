@@ -22,7 +22,7 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     /*                      Map Variables                        */
     
     @IBOutlet weak var Map_show: MKMapView!
-    let carAnnotation = MKPointAnnotation()
+    var carAnnotation = MKPointAnnotation()
 
     
     
@@ -86,23 +86,23 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         
         /*                For Map                 */
         
-        let locationManager = CLLocationManager()
+        var locationManager = CLLocationManager()
         
-        let latitude:CLLocationDegrees = 32.984865
-        let longitude:CLLocationDegrees = -96.748277
+        var latitude:CLLocationDegrees = 32.984865
+        var longitude:CLLocationDegrees = -96.748277
         
-        let latDelta:CLLocationDegrees = 0.01 //zoom
-        let lonDelta:CLLocationDegrees = 0.01
+        var latDelta:CLLocationDegrees = 0.01 //zoom
+        var lonDelta:CLLocationDegrees = 0.01
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
-        Map_show.setRegion(region, animated: false)
+        Map_show.setRegion(region, animated: true)
         
         
         carAnnotation.coordinate = location
@@ -113,7 +113,7 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         
         /*    long press action      */
         
-        let uilpgr = UILongPressGestureRecognizer(target:self,action:"action:")
+        var uilpgr = UILongPressGestureRecognizer(target:self,action:"action:")
         
         uilpgr.minimumPressDuration = 1.5
         
@@ -123,26 +123,32 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         
         loadDefaults()
     }
-    
+/*
     func locationManager(manager:CLLocationManager!,didUpdateLocations locations:[CLLocation]){
-        //print(locations)
+        print(locations)
         
         var userLocation:CLLocation = locations[0]
         
         var latitude = userLocation.coordinate.latitude
         
         var longitude = userLocation.coordinate.longitude
+        //var latitude = 32.0023
+        //var longitude = -75.3323
+        
         
         var latDelta:CLLocationDegrees = 0.01 //zoom
         var lonDelta:CLLocationDegrees = 0.01
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
-        self.Map_show.setRegion(region, animated: false)   //if true,map will automatic move when location updated
+        self.Map_show.setRegion(region, animated: true)   //if true,map will automatic move when location updated
+        
+        self.carAnnotation.coordinate = location
+        Map_show.addAnnotation(self.carAnnotation)
         
     }
-    
+*/
     
     func action(gestureRecognizer: UIGestureRecognizer){
         //print("Gesture Recognized")
@@ -217,7 +223,7 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
             log(">>> Data received, but cannot be converted to String")
             return
         }
-        log("Data received: \(stringData)")
+        //log("Data received: \(stringData)")
         
         var coordinateArr = stringData.characters.split(" ").map(String.init)
         
@@ -229,6 +235,8 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         var longitude:Float = Float(coordinateArr[1])!
         
         
+        print("Received coordinate: \(latitude),\(longitude)")
+        log(">>> Received coordinate: \(latitude)   \(longitude)")
         /***************************************************************/
         
     }
