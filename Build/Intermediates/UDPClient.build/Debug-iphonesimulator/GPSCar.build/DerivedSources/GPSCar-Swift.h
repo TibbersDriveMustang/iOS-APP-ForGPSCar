@@ -116,9 +116,9 @@ SWIFT_CLASS("_TtC6GPSCar11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocationManager;
 @class MKPointAnnotation;
 @class GCDAsyncUdpSocket;
+@class CLLocationManager;
 @class CLLocation;
 @class UIGestureRecognizer;
 @class NSData;
@@ -139,12 +139,7 @@ SWIFT_CLASS("_TtC6GPSCar14ViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified messageTextField;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified answerTextView;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified Map_show;
-@property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
-@property (nonatomic) CLLocationDegrees latitude;
-@property (nonatomic) CLLocationDegrees longitude;
-@property (nonatomic) CLLocationDegrees latDelta;
-@property (nonatomic) CLLocationDegrees lonDelta;
-@property (nonatomic, strong) MKPointAnnotation * _Nonnull annotation;
+@property (nonatomic, readonly, strong) MKPointAnnotation * _Nonnull carAnnotation;
 
 /// <hr/>
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified localIP;

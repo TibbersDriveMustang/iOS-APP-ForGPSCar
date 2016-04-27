@@ -22,15 +22,10 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     /*                      Map Variables                        */
     
     @IBOutlet weak var Map_show: MKMapView!
-    var locationManager = CLLocationManager()
+    let carAnnotation = MKPointAnnotation()
+
     
-    var latitude:CLLocationDegrees = 32.984865
-    var longitude:CLLocationDegrees = -96.748277
     
-    var latDelta:CLLocationDegrees = 0.01 //zoom
-    var lonDelta:CLLocationDegrees = 0.01
-    
-    var annotation = MKPointAnnotation()
     
 
     
@@ -90,6 +85,14 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         super.viewDidLoad()
         
         /*                For Map                 */
+        
+        let locationManager = CLLocationManager()
+        
+        let latitude:CLLocationDegrees = 32.984865
+        let longitude:CLLocationDegrees = -96.748277
+        
+        let latDelta:CLLocationDegrees = 0.01 //zoom
+        let lonDelta:CLLocationDegrees = 0.01
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -101,11 +104,12 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
         
         Map_show.setRegion(region, animated: false)
         
-        annotation.coordinate = location
         
-        annotation.title = "Car Location"
+        carAnnotation.coordinate = location
         
-        Map_show.addAnnotation(annotation)
+        carAnnotation.title = "Car Location"
+        
+        Map_show.addAnnotation(carAnnotation)
         
         /*    long press action      */
         
@@ -214,9 +218,16 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
             return
         }
         log("Data received: \(stringData)")
+        
+        var coordinateArr = stringData.characters.split(" ").map(String.init)
+        
+        
+        //received latitude,longitude,aitude
         /*                  Received Data Operate here                 */
-        //var latitude:Float =
-        //var longitude:Float =
+        var latitude:Float = Float(coordinateArr[0])!
+        
+        var longitude:Float = Float(coordinateArr[1])!
+        
         
         /***************************************************************/
         
