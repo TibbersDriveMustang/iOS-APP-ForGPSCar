@@ -11,6 +11,7 @@ import CocoaAsyncSocket
 import MapKit
 import CoreLocation
 
+
 class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var hostTextField: UITextField!
@@ -24,20 +25,6 @@ class ViewController: UIViewController, GCDAsyncUdpSocketDelegate, UITextFieldDe
     @IBOutlet weak var Map_show: MKMapView!
     var carAnnotation = MKPointAnnotation()
 
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
     /************************************************************/
     
     
